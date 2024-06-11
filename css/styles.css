@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+nav{
+    background-color:rgba(3, 214, 45, 0.5) ;
+}
+
 .nav-item a{
     font-size:20px;
     color:black;
@@ -11,17 +15,18 @@
     padding-left:1em ;
     padding-right:1em ;
     transition: 1s;
-    border-bottom: groove 2px transparent;
+    border-bottom: double 2px transparent;
 }
 
 .nav-item a:hover{
-    color:green;
+    color:white;
     text-shadow:5px 5px grey;
-    border-bottom: groove 2px green;
+    border-bottom: double 2px white;
 }
 
 .active a{
-    color:green;
+    color:white;
+    border-bottom: double 2px white;
 }
 
 #banner{
