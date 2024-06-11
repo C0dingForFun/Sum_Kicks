@@ -8,7 +8,7 @@ function Kicks(id, brand, name, category, image, quantity, price){
     this.price = price;
 }
 
-// const item1 = new createItem(1, 'Nike P-6000', 'Shoes', 
+// const item1 = new createItem(1, 'Nike', 'P-6000', 'Shoes', 
 //     'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i1-ec0d69e5-4700-48e7-810a-20f1d8249316/p-6000-shoes-zxj309.png'
 //     ,'A mash-up of Pegasus past, the Nike P-6000 delivers an early-2000s look with breathable mesh and synthetic overlays. Vibrant colours give it a modern look while its sporty aesthetic features foam cushioning for all-day comfort.', 
 //     1,29.99);
