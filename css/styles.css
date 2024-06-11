@@ -19,13 +19,14 @@ nav{
 }
 
 .nav-item a:hover{
-    color:darkgreen;
+    color:white;
     text-shadow:5px 5px grey;
-    border-bottom: double 2px darkgreen;
+    border-bottom: double 2px white;
 }
 
 .active a{
-    color:darkgreen;
+    color:white;
+    border-bottom: double 2px white;
 }
 
 #banner{
@@ -294,14 +295,14 @@ button:hover, button a:hover{
     }
 
     #about{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
     }
 
     #about_Us{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
