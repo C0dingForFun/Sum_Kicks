@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+nav{
+    background-color:rgba(145, 209, 96, 0.5) ;
+}
+
 .nav-item a{
     font-size:20px;
     color:black;
@@ -15,13 +19,13 @@
 }
 
 .nav-item a:hover{
-    color:green;
+    color:darkgreen;
     text-shadow:5px 5px grey;
-    border-bottom: groove 2px green;
+    border-bottom: groove 2px darkgreen;
 }
 
 .active a{
-    color:green;
+    color:darkgreen;
 }
 
 #banner{
@@ -42,7 +46,7 @@
     font-size:5em;
     font-weight:bold;
     padding-left:20px;
-    text-shadow:5px 5px gray;
+    text-shadow:5px 5px rgba(145, 209, 96, 0.5);
 }
 
 .color1{
@@ -79,15 +83,15 @@
 }
 
 .color1:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .color2:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.color3.color3:hover{
-    opacity: 0.7;
+.color3:hover{
+    opacity: 0.9;
 }
 
 .sizes > button{
@@ -110,7 +114,7 @@
 .sizes > button:hover{
     background-color: black;
     color: white;
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px rgba(145, 209, 96, 0.5);
 }
 
 #trending > div{
@@ -175,7 +179,7 @@ button:hover, button a:hover{
     color: white;
     background-color: black;
     text-decoration: none;
-    box-shadow: 3px 3px gray;
+    box-shadow: 3px 3px rgba(145, 209, 96, 0.5);
 }
 
 #signup{
@@ -187,6 +191,65 @@ button:hover, button a:hover{
     color:gray;
 }
 
+
+/* About page */
+
+.container-about{
+    width: 100%;
+    height:auto;
+}
+
+#welcome{
+    height:400px;
+    background-color: lightgreen;
+    color:white;
+    font-size: 20px;
+}
+#welcome-img{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
+
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about_Us{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about h1{
+    transform: rotate(180deg);
+}
+
+#about_Us h1{
+    transform: rotate(0);
+}
+
+
+#lastImg{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
 
 @media only screen and (max-width: 600px){
 
@@ -232,5 +295,23 @@ button:hover, button a:hover{
         border:double 2px grey;
         border-radius:10%;
         display:flex;
+    }
+
+    #about{
+        height:300px;
+        background-color: black;
+        color:white;
+        writing-mode:horizontal-tb;
+    }
+
+    #about_Us{
+        height:300px;
+        background-color: black;
+        color:white;
+        writing-mode:horizontal-tb;
+    }
+
+    #about h1{
+        transform: rotate(0);
     }
 }
