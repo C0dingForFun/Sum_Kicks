@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-
+/* Home page */
 nav{
     background-color:rgba(3, 214, 45, 0.5) ;
 }
@@ -158,6 +158,7 @@ footer{
     margin:5vh;
 }
 
+/* Home page */
 #login_signup{
     border:solid 2px black;
     width: 400px;
@@ -191,7 +192,6 @@ button:hover, button a:hover{
 #signup:hover{
     color:gray;
 }
-
 
 /* About page */
 
@@ -252,6 +252,7 @@ button:hover, button a:hover{
     height:400px;
 }
 
+/* About page */
 @media only screen and (max-width: 600px){
 
     .nav-item a{
