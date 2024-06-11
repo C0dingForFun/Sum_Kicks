@@ -15,13 +15,13 @@
 }
 
 .nav-item a:hover{
-    color:red;
+    color:green;
     text-shadow:5px 5px grey;
-    border-bottom: groove 2px red;
+    border-bottom: groove 2px green;
 }
 
 .active a{
-    color:red;
+    color:green;
 }
 
 #banner{
@@ -153,3 +153,84 @@ footer{
     margin:5vh;
 }
 
+#login_signup{
+    border:solid 2px black;
+    width: 400px;
+    height:500px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.login-button{
+    background-color: white;
+    width: 60px;
+    transition: 1s;
+    border-radius: 10%;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+button:hover, button a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    box-shadow: 3px 3px gray;
+}
+
+#signup{
+    color:white;
+    transition: 1s;
+}
+
+#signup:hover{
+    color:gray;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .nav-item a{
+        font-size:20px;
+        color:white;
+        font-weight:bold;
+        padding-left:1em ;
+        padding-right:1em ;
+        transition: 1s;
+        border-bottom: groove 2px transparent;
+    }
+    
+    .nav-item a:hover{
+        color:green;
+        text-shadow:5px 5px grey;
+        border-bottom: groove 2px green;
+    }
+    
+    .active a{
+        color:green;
+    }
+
+    #sales > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+    
+    #explore > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+    
+    #sports > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+}
