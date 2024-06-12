@@ -248,9 +248,6 @@ button:hover, button a:hover{
 }
 
 
-
-
-
 #lastImg{
     background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
     background-repeat: no-repeat;
@@ -265,7 +262,7 @@ button:hover, button a:hover{
         width:100%;
     }
 
-    #products{
+    /* #products{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap:30px;
@@ -274,7 +271,7 @@ button:hover, button a:hover{
     .products{
         display: flex;
         justify-content: center;
-    }
+    } */
 
 /* Products page */
 @media only screen and (max-width: 600px){

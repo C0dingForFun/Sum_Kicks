@@ -24,7 +24,7 @@ const item5 = new myKicks(5, '', 'Clothing', 'https://c0dingforfun.github.io/kic
      'Very comfortable pink hoodie',1, 39.99);
     
     let items = [item1, item2, item3, item4, item5]
-    let products = document.querySelector('.row');
+    let products = document.querySelector('#products');
     localStorage.setItem('items', JSON.stringify('items'));
     
     items.forEach(item => {
