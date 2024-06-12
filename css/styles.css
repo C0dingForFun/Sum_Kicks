@@ -243,6 +243,13 @@ button:hover, button a:hover{
     transform: rotate(0);
 }
 
+/* About Page */
+
+/* Products page */
+/* .products img{
+    width:250px;
+    height:300px;
+} */
 
 #lastImg{
     background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
