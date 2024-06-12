@@ -262,10 +262,10 @@ button:hover, button a:hover{
         width:100%;
     }
 
-    .products{
+    #products{
         display: grid;
-        grid-template-columns: repeat(auto-fill, min-max(600xp, 1fr));
-        gap:30px;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
     }
 
 /* Products page */

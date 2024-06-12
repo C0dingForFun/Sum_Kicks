@@ -24,20 +24,18 @@ const item5 = new myKicks(5, '', 'Clothing', 'https://c0dingforfun.github.io/kic
      'Very comfortable pink hoodie',1, 39.99);
     
     let items = [item1, item2, item3, item4, item5]
-    let main = document.querySelector('main');
+    let products = document.querySelector('#products');
     localStorage.setItem('items', JSON.stringify('items'));
     
     items.forEach(item => {
-        main.innerHTML += `
-                            <div class="products">
+        products.innerHTML += `
                                 <div class="card" style="width: 18rem;">
                                     <img src="${item.image}" class="card-img-top">
                                 <div class="card-body">
                                     <h5 class="card-title">${item.name}</h5>
                                     <p class="card-text">R${item.price}</p>
                                     <button value="${item.id}">Add To Cart</button>
-                                </div>
-                            </div>    
+                                </div>  
                      `
     });
     
