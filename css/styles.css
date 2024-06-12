@@ -243,12 +243,9 @@ button:hover, button a:hover{
     transform: rotate(0);
 }
 
-/* About Page */
 
-/* Products page */
-.card-body button{
-    width:100%;
-}
+
+
 
 #lastImg{
     background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
@@ -257,7 +254,25 @@ button:hover, button a:hover{
     background-size:cover;
     height:400px;
 }
+/* About Page */
+    
+/* Products page */
+    .card-body button{
+        width:100%;
+    }
 
+    #products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:30px;
+    }
+
+    .products{
+        display: flex;
+        justify-content: center;
+    }
+
+/* Products page */
 @media only screen and (max-width: 600px){
 
     .nav-item a{
