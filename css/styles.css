@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+/* Home page */
+nav{
+    background-color:rgba(3, 214, 45, 0.5) ;
+}
 
 .nav-item a{
     font-size:20px;
@@ -11,17 +15,18 @@
     padding-left:1em ;
     padding-right:1em ;
     transition: 1s;
-    border-bottom: groove 2px transparent;
+    border-bottom: double 2px transparent;
 }
 
 .nav-item a:hover{
-    color:red;
+    color:white;
     text-shadow:5px 5px grey;
-    border-bottom: groove 2px red;
+    border-bottom: double 2px white;
 }
 
 .active a{
-    color:red;
+    color:white;
+    border-bottom: double 2px white;
 }
 
 #banner{
@@ -42,7 +47,7 @@
     font-size:5em;
     font-weight:bold;
     padding-left:20px;
-    text-shadow:5px 5px gray;
+    text-shadow:5px 5px rgba(145, 209, 96, 0.5);
 }
 
 .color1{
@@ -79,15 +84,15 @@
 }
 
 .color1:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .color2:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.color3.color3:hover{
-    opacity: 0.7;
+.color3:hover{
+    opacity: 0.9;
 }
 
 .sizes > button{
@@ -110,7 +115,7 @@
 .sizes > button:hover{
     background-color: black;
     color: white;
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px rgba(145, 209, 96, 0.5);
 }
 
 #trending > div{
@@ -153,3 +158,162 @@ footer{
     margin:5vh;
 }
 
+/* Home page */
+#login_signup{
+    border:solid 2px black;
+    width: 400px;
+    height:500px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.login-button{
+    background-color: white;
+    width: 60px;
+    transition: 1s;
+    border-radius: 10%;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+button:hover, button a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    box-shadow: 3px 3px rgba(145, 209, 96, 0.5);
+}
+
+#signup{
+    color:white;
+    transition: 1s;
+}
+
+#signup:hover{
+    color:gray;
+}
+
+/* About page */
+
+.container-about{
+    width: 100%;
+    height:auto;
+}
+
+#welcome{
+    height:400px;
+    background-color: lightgreen;
+    color:white;
+    font-size: 20px;
+}
+#welcome-img{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
+
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about_Us{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
+
+#about h1{
+    transform: rotate(180deg);
+}
+
+#about_Us h1{
+    transform: rotate(0);
+}
+
+
+#lastImg{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
+
+/* About page */
+@media only screen and (max-width: 600px){
+
+    .nav-item a{
+        font-size:20px;
+        color:white;
+        font-weight:bold;
+        padding-left:1em ;
+        padding-right:1em ;
+        transition: 1s;
+        border-bottom: groove 2px transparent;
+    }
+    
+    .nav-item a:hover{
+        color:green;
+        text-shadow:5px 5px grey;
+        border-bottom: groove 2px green;
+    }
+    
+    .active a{
+        color:green;
+    }
+
+    #sales > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+    
+    #explore > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+    
+    #sports > div{
+        width:200px;
+        height:250px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
+
+    #about{
+        height:300px;
+        background-color: black;
+        color:white;
+        writing-mode:horizontal-tb;
+    }
+
+    #about_Us{
+        height:300px;
+        background-color: black;
+        color:white;
+        writing-mode:horizontal-tb;
+    }
+
+    #about h1{
+        transform: rotate(0);
+    }
+}
