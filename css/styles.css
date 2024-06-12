@@ -274,10 +274,6 @@ button:hover, button a:hover{
         text-shadow:5px 5px grey;
         border-bottom: groove 2px green;
     }
-    
-    .active a{
-        color:green;
-    }
 
     #sales > div{
         width:200px;
@@ -304,14 +300,14 @@ button:hover, button a:hover{
     }
 
     #about{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
     }
 
     #about_Us{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
