@@ -14,9 +14,9 @@ const item1 = new myKicks(1, 'Nike', 'Air Force 1',
     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Force1(White).png'
     ,'A mash-up of Pegasus past, the Nike P-6000 delivers an early-2000s look with breathable mesh and synthetic overlays. Vibrant colours give it a modern look while its sporty aesthetic features foam cushioning for all-day comfort.', 
     1,29.99);
-const item2 = new myKicks(2, 'Nike', 'Clothing', 'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/KD17(Sunrise).png',
+const item2 = new myKicks(2, 'Nike', 'KD17 Sunrise', 'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/KD17(Sunrise).png',
      'Slim-fit denim jeans for men, made with premium cotton',1, 49.99);
-const item3 = new myKicks(3, 'Nike', 'Electronics', 'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Force1(Black).png', 
+const item3 = new myKicks(3, 'Nike', 'Electronics', 'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Max(Yellow&Black).png', 
     'Noise-canceling wireless beats headphones with up to 20 hours of battery life',1, 129.99);
 const item4 = new myKicks(4, '', 'Books', 'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Force1(Black).png',
      'The latest bestselling novel by a renowned author',1, 14.99);

@@ -266,6 +266,8 @@ button:hover, button a:hover{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;
+        margin-left:50px;
+        margin-top: 50px;
     }
 
 /* Products page */
