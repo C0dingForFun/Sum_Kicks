@@ -141,20 +141,21 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
                      `
 
     });
+    }
 
     
-    let purcKicks = []
+//     let purcKicks = []
     
-    let purcBtns = document.querySelectorAll('.purchase');
-    function addTocart(id){
-        let [kicks] = kicks.filter(object => object.id === +id);
-        purcKicks.push(kicks);
-        localStorage.setItem('cart',JSON.stringify(purcKicks));
-    }
+//     let purcBtns = document.querySelectorAll('.purchase');
+//     function addTocart(id){
+//         let [kicks] = kicks.filter(object => object.id === +id);
+//         purcKicks.push(kicks);
+//         localStorage.setItem('cart',JSON.stringify(purcKicks));
+//     }
     
-    purcBtns.forEach(button =>{
-        button.addEventListener('click',(event)=>{
-            addTocart(event.target.value);
-        })
-    })
-}
+//     purcBtns.forEach(button =>{
+//         button.addEventListener('click',(event)=>{
+//             addTocart(event.target.value);
+//         })
+//     })
+// }
