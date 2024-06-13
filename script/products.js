@@ -112,8 +112,15 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
 
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
     let products = document.querySelector('#products');
+    let viewProducts = document.querySelector('#view')
     localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
     
+    // nKicks.forEach(button =>{
+    //         button.addEventListener('click',(event)=>{
+    //             nKicks(event.target.value);
+    //         })
+    // })
+
     nKicks.forEach(nike => {
         products.innerHTML += `
                                 <div class="card" style="width: 18rem;">
@@ -121,8 +128,25 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
                                     <div class="card-body">
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
-                                        <button value="${nike.id}" class="products">Add To Cart</button>
-                                    </div>    
+                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button><button value="${nike.id}" class="products">Add To Cart</button>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${nike.name}</h1>
+                                            </div>
+                                            <div class="modal-body w-80 row">
+                                                <div><img src="${nike.image}" style="width:10rem; margin:auto">
+                                                <p>${nike.description}</p></div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Add To Cart</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>  
+                                   </div>    
                                 </div>  
                             `
 
@@ -133,11 +157,11 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
 //     let purcKicks = []
     
 //     let purcBtns = document.querySelectorAll('.purchase');
-//     function addTocart(id){
-//         let [kicks] = kicks.filter(object => object.id === +id);
-//         purcKicks.push(kicks);
-//         localStorage.setItem('cart',JSON.stringify(purcKicks));
-//     }
+    function addTocart(id){
+        let [kicks] = kicks.filter(object => object.id === +id);
+        purcKicks.push(kicks);
+        localStorage.setItem('cart',JSON.stringify(purcKicks));
+    }
     
 //     purcBtns.forEach(button =>{
 //         button.addEventListener('click',(event)=>{
