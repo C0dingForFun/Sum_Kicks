@@ -1,3 +1,4 @@
+
 function myKicks(id, brand, name, image, description, quantity, price){
     this.id = id;
     this.name = name;
@@ -54,5 +55,6 @@ const kick5 = new myKicks(5, '', 'Clothing', 'https://c0dingforfun.github.io/kic
             addTocart(event.target.value);
         })
     })
+
 
 
