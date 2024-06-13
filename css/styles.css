@@ -290,6 +290,17 @@ button:hover, button a:hover{
         display: flex;
         justify-content: center;
     }
+
+
+    .contact_btn{
+        width: 60px;
+        background-color: white;
+    }
+
+    textarea{
+        width: 12vw;
+    }
+/* Contact page */
     tr img{
         width:18rem;
     } 
