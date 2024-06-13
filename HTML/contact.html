@@ -35,7 +35,7 @@
             
               <div class="offcanvas-body text-center">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3 f-3">                       
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
                   </li>
                 </li>
@@ -45,7 +45,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="./products.html">Products</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
@@ -64,16 +64,18 @@
             <div class="d-flex justify-content-center align-items-center">
                 <form action="https://formspree.io/f/xayrrbpg" method="post">
                     <div>
-                        <h1>Contact Us</h1>
+                        <h1 data-aos="fade-up">Contact Us</h1>
                     </div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" class="rounded" placeholder="Name" required><br><br>
-                    <label for="surname">Surname:</label><br>
-                    <input type="text" name="surname" class="rounded" placeholder="Surname" required><br><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" class="rounded" placeholder="Email" required><br><br>
-                    <textarea name="message" placeholder="Message" required></textarea><br><br>
-                    <button class="contact_btn">Login</button><br><br>
+                    <div data-aos="fade-up" data-aos-delay="500">
+                      <label for="name">Name:</label><br>
+                      <input type="text" name="name" class="rounded" placeholder="Name" required><br><br>
+                      <label for="surname">Surname:</label><br>
+                      <input type="text" name="surname" class="rounded" placeholder="Surname" required><br><br>
+                      <label for="email">Email:</label><br>
+                      <input type="email" name="email" class="rounded" placeholder="Email" required><br><br>
+                      <textarea name="message" placeholder="Message" required></textarea><br><br>
+                      <button class="contact_btn">Submit</button><br><br>
+                    </div>
                 </form>
             </div>
         </div>
