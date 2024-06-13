@@ -43,7 +43,6 @@ const kick5 = new myKicks(5, '', 'Clothing', 'https://c0dingforfun.github.io/kic
     let purcKicks = []
     
     let purcBtns = document.querySelectorAll('.purchase');
-    
     function addTocart(id){
         let [kicks] = kicks.filter(object => object.id === +id);
         purcKicks.push(kicks);
