@@ -1,17 +1,3 @@
-
-function myKicks(id, brand, name, image, description, quantity, price){
-    this.id = id;
-    this.name = name;
-    this.name = name;
-    this.brand = brand;
-    this.image = image;
-    this.description = description
-    this.quantity = quantity;
-    this.price = price;
-
-    
-// }
-
 // const kicks1 = new myKicks(1, 'Nike', 'Air Force 1', 
 //     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Force1(White).png'
 //     ,'A mash-up of Pegasus past, the Nike P-6000 delivers an early-2000s look with breathable mesh and synthetic overlays. Vibrant colours give it a modern look while its sporty aesthetic features foam cushioning for all-day comfort.', 
@@ -90,38 +76,38 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png', 'hdjdbdjdh', 1,1500);
 
 //Puma
-function pumaKicks(id, brand, name, image, description, quantity, price){
-  this.id = id;
-  this.brand = brand;
-  this.name = name;
-  this.image = image;
-  this.description = description;
-  this.quantity = quantity;
-  this.price = price;
-}
-const pMen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pWomen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// function pumaKicks(id, brand, name, image, description, quantity, price){
+//   this.id = id;
+//   this.brand = brand;
+//   this.name = name;
+//   this.image = image;
+//   this.description = description;
+//   this.quantity = quantity;
+//   this.price = price;
+// }
+// const pMen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const pWomen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 
 //Addidas
-function addidasKicks(id, brand, name, image, description, quantity, price){
-  this.id = id;
-  this.brand = brand;
-  this.name = name;
-  this.image = image;
-  this.description = description;
-  this.quantity = quantity;
-  this.price = price;
-}
-const aMen1 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const aMen2 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const aMen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const aWomen1 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const aWomen2 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// function addidasKicks(id, brand, name, image, description, quantity, price){
+//   this.id = id;
+//   this.brand = brand;
+//   this.name = name;
+//   this.image = image;
+//   this.description = description;
+//   this.quantity = quantity;
+//   this.price = price;
+// }
+// const aMen1 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const aMen2 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const aMen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const aWomen1 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const aWomen2 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+// const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 
 
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
@@ -138,10 +124,10 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
                                         <button value="${nike.id}" class="products">Add To Cart</button>
                                     </div>    
                                 </div>  
-                     `
+                            `
 
-    });
-    }
+        });
+    
 
     
 //     let purcKicks = []
