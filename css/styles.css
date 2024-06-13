@@ -277,30 +277,27 @@ button:hover, button a:hover{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;
-        margin-left:40px;
-        margin-top: 50px;
+        place-items: center;
     }
 
     #puma{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;
-        margin-left:40px;
-        margin-top: 50px;
+        place-items: center;
     }
 
     #addidas{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;
-        margin-left:40px;
-        margin-top: 50px;
+        place-items: center;
     }
 
 /* Products page */
 
 /* Cart page */
-    main table{
+    main table th td{
         display: flex;
         justify-content: center;
     }
