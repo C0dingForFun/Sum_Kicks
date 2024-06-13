@@ -220,6 +220,12 @@ button:hover, button a:hover{
         color:white;
         font-size: 20px;
     }
+    #welcome2{
+        height:200px;
+        background-color: lightgreen;
+        color:white;
+        font-size: 20px;
+    }
     #welcome-img{
         background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Green_Jordan.jpg');
         background-repeat: no-repeat;
@@ -293,6 +299,9 @@ button:hover, button a:hover{
         gap:3em;
         place-items: center;
     }
+    #filter{
+        width:20vw;
+    }
 
 /* Products page */
 
@@ -357,7 +366,13 @@ button:hover, button a:hover{
     }
     #welcome{
         position: relative;
-        top:20px;
+        top:90px;
+        height:220px;
+        background-color: lightgreen;
+        color:white;
+        font-size: 20px;
+    }
+    #welcome2{
         height:200px;
         background-color: lightgreen;
         color:white;
