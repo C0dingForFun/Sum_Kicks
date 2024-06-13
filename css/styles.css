@@ -1,260 +1,260 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
 
-nav{
-    background-color:rgba(3, 214, 45, 0.5) ;
-}
+    nav{
+        background-color:rgba(3, 214, 45, 0.5) ;
+    }
 
-.logo{
-    position: relative;
-    bottom: 15px;
-}
-.nav-item a{
-    font-size:20px;
-    color:black;
-    font-weight:bold;
-    padding-left:1em ;
-    padding-right:1em ;
-    transition: 1s;
-    border-bottom: double 2px transparent;
-}
+    .logo{
+        position: relative;
+        bottom: 15px;
+    }
+    .nav-item a{
+        font-size:20px;
+        color:black;
+        font-weight:bold;
+        padding-left:1em ;
+        padding-right:1em ;
+        transition: 1s;
+        border-bottom: double 2px transparent;
+    }
 
-.nav-item a:hover{
-    color:white;
-    text-shadow:5px 5px grey;
-    border-bottom: double 2px white;
-}
+    .nav-item a:hover{
+        color:white;
+        text-shadow:5px 5px grey;
+        border-bottom: double 2px white;
+    }
 
-.active a{
-    color:white;
-    border-bottom: double 2px white;
-}
+    .active a{
+        color:white;
+        border-bottom: double 2px white;
+    }
 
-#banner{
-    width:743px;
-    height:700px;
-    background-color:lightgrey; 
-    border-radius: 0 0 0 12%;
-}
+    #banner{
+        width:743px;
+        height:700px;
+        background-color:lightgrey; 
+        border-radius: 0 0 0 12%;
+    }
 
-.circle{
-    width:350px;
-    height:350px;
-    border-radius:50%;
-    background-color: rgba(236, 236, 236, 0.808);
-}
+    .circle{
+        width:350px;
+        height:350px;
+        border-radius:50%;
+        background-color: rgba(236, 236, 236, 0.808);
+    }
 
-.bannertxt h1{
-    font-size:5em;
-    font-weight:bold;
-    padding-left:20px;
-    text-shadow:5px 5px rgba(145, 209, 96, 0.5);
-}
+    .bannertxt h1{
+        font-size:5em;
+        font-weight:bold;
+        padding-left:20px;
+        text-shadow:5px 5px rgba(145, 209, 96, 0.5);
+    }
 
-.color1{
-    width:35px;
-    height:35px;
-    border-radius:50% ;
-    background-color: blue;
-    border:groove 2px white;
-    position: relative;
-    left:312px;
-    top:90px;
-}
+    .color1{
+        width:35px;
+        height:35px;
+        border-radius:50% ;
+        background-color: blue;
+        border:groove 2px white;
+        position: relative;
+        left:312px;
+        top:90px;
+    }
 
-.color2{
-    width:35px;
-    height:35px;
-    background-color: red;
-    border:groove 2px white;
-    border-radius:50% ;
-    position: relative;
-    left:290px;
-    top:140px;
-}
+    .color2{
+        width:35px;
+        height:35px;
+        background-color: red;
+        border:groove 2px white;
+        border-radius:50% ;
+        position: relative;
+        left:290px;
+        top:140px;
+    }
 
-.color3{
-    width:35px;
-    height:35px;
-    background-color: gray;
-    border:groove 2px white;
-    border-radius:50% ;
-    position: relative;
-    left:242px;
-    top:200px;
-}
+    .color3{
+        width:35px;
+        height:35px;
+        background-color: gray;
+        border:groove 2px white;
+        border-radius:50% ;
+        position: relative;
+        left:242px;
+        top:200px;
+    }
 
-.color1:hover{
-    opacity: 0.9;
-}
+    .color1:hover{
+        opacity: 0.9;
+    }
 
-.color2:hover{
-    opacity: 0.9;
-}
+    .color2:hover{
+        opacity: 0.9;
+    }
 
-.color3:hover{
-    opacity: 0.9;
-}
+    .color3:hover{
+        opacity: 0.9;
+    }
 
-.sizes > button{
-    width:40px;
-    height:40px;
-    border:solid 2px black;
-    border-radius: 10%;
-    background-color: white;
-    padding:1em;
-    margin: 1em;
-    font-size:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color:black;
-    transition:1s;
-}
+    .sizes > button{
+        width:40px;
+        height:40px;
+        border:solid 2px black;
+        border-radius: 10%;
+        background-color: white;
+        padding:1em;
+        margin: 1em;
+        font-size:20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color:black;
+        transition:1s;
+    }
 
-.sizes > button:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 5px 5px rgba(145, 209, 96, 0.5);
-}
+    .sizes > button:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 5px 5px rgba(145, 209, 96, 0.5);
+    }
 
-#trending > div{
-    display:flex;
-    width:300px;
-    height:350px;
-    border:double 2px grey;
-    border-radius:10%;
-}
+    #trending > div{
+        display:flex;
+        width:300px;
+        height:350px;
+        border:double 2px grey;
+        border-radius:10%;
+    }
 
-section{
-    margin-top:10vh;
-}
+    section{
+        margin-top:10vh;
+    }
 
-#sales > div{
-    width:300px;
-    height:350px;
-    border:double 2px grey;
-    border-radius:10%;
-    display:flex;
-}
+    #sales > div{
+        width:300px;
+        height:350px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
 
-#explore > div{
-    width:300px;
-    height:350px;
-    border:double 2px grey;
-    border-radius:10%;
-    display:flex;
-}
+    #explore > div{
+        width:300px;
+        height:350px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
 
-#sports > div{
-    width:300px;
-    height:350px;
-    border:double 2px grey;
-    border-radius:10%;
-    display:flex;
-}
+    #sports > div{
+        width:300px;
+        height:350px;
+        border:double 2px grey;
+        border-radius:10%;
+        display:flex;
+    }
 
-footer{
-    margin:5vh;
-}
+    footer{
+        margin:5vh;
+    }
 
-#login_signup{
-    border:solid 2px black;
-    width: 400px;
-    height:500px;
-    background-color: rgb(0,0,0,0.5);
-}
+    #login_signup{
+        border:solid 2px black;
+        width: 400px;
+        height:500px;
+        background-color: rgb(0,0,0,0.5);
+    }
 
-.login-button{
-    background-color: white;
-    width: 60px;
-    transition: 1s;
-    border-radius: 10%;
-}
+    .login-button{
+        background-color: white;
+        width: 60px;
+        transition: 1s;
+        border-radius: 10%;
+    }
 
-button a{
-    color: black;
-    text-decoration: none;
-}
-button:hover, button a:hover{
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    box-shadow: 3px 3px rgba(145, 209, 96, 0.5);
-}
+    button a{
+        color: black;
+        text-decoration: none;
+    }
+    button:hover, button a:hover{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        box-shadow: 3px 3px rgba(145, 209, 96, 0.5);
+    }
 
-#signup{
-    color:white;
-    transition: 1s;
-}
+    #signup{
+        color:white;
+        transition: 1s;
+    }
 
-#signup:hover{
-    color:gray;
-}
+    #signup:hover{
+        color:gray;
+    }
 
 
 /* About page */
 
-.container-about{
-    width: 100%;
-    height:auto;
-}
+    .container-about{
+        width: 100%;
+        height:auto;
+    }
 
-#welcome{
-    height:400px;
-    background-color: lightgreen;
-    color:white;
-    font-size: 20px;
-}
-#welcome-img{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
+    #welcome{
+        height:400px;
+        background-color: lightgreen;
+        color:white;
+        font-size: 20px;
+    }
+    #welcome-img{
+        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:400px;
+    }
 
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
+    #about{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
 
-#about_Us{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
+    #about_Us{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
 
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
+    #about{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
 
-#about h1{
-    transform: rotate(180deg);
-}
+    #about h1{
+        transform: rotate(180deg);
+    }
 
-#about_Us h1{
-    transform: rotate(0);
-}
+    #about_Us h1{
+        transform: rotate(0);
+    }
 
 
-#lastImg{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
+    #lastImg{
+        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:400px;
+    }
 /* About Page */
     
 /* Products page */
@@ -271,6 +271,17 @@ button:hover, button a:hover{
     }
 
 /* Products page */
+
+/* Cart page */
+    main table{
+        display: flex;
+        justify-content: center;
+    }
+    tr img{
+        width:18rem;
+    } 
+
+/* Cart page */
 @media only screen and (max-width: 600px){
 
     .nav-item a{
@@ -329,5 +340,13 @@ button:hover, button a:hover{
 
     #about h1{
         transform: rotate(0);
+    }
+
+    #products{
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
+        margin-left:5px;
+        margin-top: 50px;
     }
 }
