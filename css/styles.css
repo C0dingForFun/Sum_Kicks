@@ -212,62 +212,70 @@ button:hover, button a:hover{
 }
 
 /* About page */
-    .container-about{
-        width: 100%;
-        height:auto;
-    }
+.container-about{
+    width: 100%;
+    height:auto;
+}
 
-    #welcome{
-        height:400px;
-        background-color: lightgreen;
-        color:white;
-        font-size: 20px;
-    }
-    #welcome-img{
-        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
-        background-repeat: no-repeat;
-        background-position:center;
-        background-size:cover;
-        height:400px;
-    }
+#welcome{
+    height:400px;
+    background-color: lightgreen;
+    color:white;
+    font-size: 20px;
+}
 
-    #about{
-        height:400px;
-        background-color: black;
-        color:white;
-        writing-mode:vertical-rl;
-    }
+#welcome2{
+    height:400px;
+    background-color: lightgreen;
+    color:white;
+    font-size: 20px;
+}
+#welcome-img{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Green_Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
 
-    #about_Us{
-        height:400px;
-        background-color: black;
-        color:white;
-        writing-mode:vertical-rl;
-    }
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
 
-    #about{
-        height:400px;
-        background-color: black;
-        color:white;
-        writing-mode:vertical-rl;
-    }
+#about_Us{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
 
-    #about h1{
-        transform: rotate(180deg);
-    }
+#about{
+    height:400px;
+    background-color: black;
+    color:white;
+    writing-mode:vertical-rl;
+}
 
-    #about_Us h1{
-        transform: rotate(0);
-    }
+#about h1{
+    transform: rotate(180deg);
+}
+
+#about_Us h1{
+    transform: rotate(0);
+}
 
 
-    #lastImg{
-        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
-        background-repeat: no-repeat;
-        background-position:center;
-        background-size:cover;
-        height:400px;
-    }
+#lastImg{
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Jordan.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:400px;
+}
+    
 /* About Page */
     
 /* Products page */
