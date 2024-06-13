@@ -55,12 +55,15 @@ function pumaKicks(id, brand, name, image, description, quantity, price){
   this.quantity = quantity;
   this.price = price;
 }
-const pMen1 = new pumaKicks(1, 'Puma', 'Slipstream Leather',
+const pMen1 = new pumaKicks(1, 'Puma', 'Slipstream Leather(Men)',
      'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Slipstream_Leather.png',
      'hdjdbdjdh', 1,1500);
-const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pMen2 = new pumaKicks(1, 'Puma', 'Caven Mid(Men)',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Caven_Mid.png', 'hdjdbdjdh', 1,1500);
+const pMen3 = new pumaKicks(1, 'Puma', 'RBD Game(Men)',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/RBD_Game.png', 'hdjdbdjdh', 1,1500);
+const pWomen1 = new pumaKicks(1, 'Puma', 'Puma',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/', 'hdjdbdjdh', 1,1500);
 const pWomen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 
