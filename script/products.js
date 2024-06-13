@@ -26,22 +26,24 @@ function nikeKicks(id, brand, name, image, description, quantity, price){
 const nMen1 = new nikeKicks(1, 'Nike', 'Air Force 1(Men)',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Force1(White).png',
     'The radiance lives on in the Nike Air Force 1 07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.', 
-    1,1500);
+    1,1700);
 const nMen2 = new nikeKicks(1, 'Nike', 'KD17 Sunrise(Men)',
     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/KD17(Sunrise).png',
      'While Kevin Durant all-timer status is already cemented, his hooper soul cannot be soothed unless he is on the court, perfecting his craft. Put in the work to be great in the KD17, a shoe for gym rats and those who insist on running it back. A forefoot Air Zoom unit enhances your first step. We combined it with Nike Air cushioning to fuel full-court sprints and defensive stops that can decide games. This special design pays homage to a pair of sneakers that KD adored as a kid, which helped instil his legendary work ethic.',
-      1,1500);
+      1,1400);
 const nMen3 = new nikeKicks(1, 'Nike', 'Air Max(Men)',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Men/Air_Max(Yellow&Black).png',
       'Lace up and feel the legacy in a champion running shoe that helped define the 90s. Worn by presidents, revolutionised through collabs and celebrated through rare colourways, its striking visuals, Waffle outsole and exposed Air cushioning keep the Air Max 90 alive and well.',
-       1,1500);
+       1,1300);
 const nWomen1 = new nikeKicks(1, 'Nike', 'Air Force 1(Women)',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/Air_Force(White).png',
       'hdjdbdjdh', 1,1500);
 const nWomen2 = new nikeKicks(1, 'Nike', 'Air Max (Women)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/Air_Max(Sail&White).png', 'hdjdbdjdh', 1,1500);
+     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/Air_Max(Sail&White).png',
+      'hdjdbdjdh', 1,1300);
 const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross (Women)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png', 'hdjdbdjdh', 1,1500);
+     'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png',
+      'hdjdbdjdh', 1,1100);
 
 // Puma
 function pumaKicks(id, brand, name, image, description, quantity, price){
