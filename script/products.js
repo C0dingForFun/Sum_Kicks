@@ -115,11 +115,17 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
     let viewProducts = document.querySelector('#view')
     localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
     
-    // nKicks.forEach(button =>{
-    //         button.addEventListener('click',(event)=>{
+    // nKicks.forEach(nike =>{
+    //         nike.addEventListener('click',(event)=>{
     //             nKicks(event.target.value);
     //         })
     // })
+
+    // function addTocart(id){
+    //         let [kicks] = kicks.filter(object => object.id === +id);
+    //         purcKicks.push(kicks);
+    //         localStorage.setItem('cart',JSON.stringify(nKicks));
+    //     }
 
     nKicks.forEach(nike => {
         products.innerHTML += `
