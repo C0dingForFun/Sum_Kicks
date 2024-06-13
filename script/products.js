@@ -1,3 +1,4 @@
+
 function myKicks(id, brand, name, image, description, quantity, price){
     this.id = id;
     this.name = name;
@@ -138,10 +139,9 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
                                     </div>    
                                 </div>  
                      `
-<<<<<<< HEAD
+
     });
-=======
-    });
+
     
     let purcKicks = []
     
@@ -157,8 +157,4 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
             addTocart(event.target.value);
         })
     })
-
-
-
-
->>>>>>> 610176c8563b71f51c5d620d2280cfd6036ea2fd
+}
