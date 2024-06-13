@@ -16,6 +16,11 @@ nav{
     background-color:rgba(3, 214, 45, 0.5) ;
 }
 
+.logo{
+    position: relative;
+    bottom: 15px;
+}
+
 .nav-item a{
     font-size:20px;
     color:black;
@@ -288,59 +293,7 @@ button:hover, button a:hover{
     tr img{
         width:18rem;
     } 
-
-#welcome{
-    height:400px;
-    background-color: lightgreen;
-    color:white;
-    font-size: 20px;
-}
-#welcome-img{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
-
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about_Us{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about h1{
-    transform: rotate(180deg);
-}
-
-#about_Us h1{
-    transform: rotate(0);
-}
-
-
-#lastImg{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
-/* About page */
+/* Cart page */
 
 
 @media only screen and (max-width: 600px){
