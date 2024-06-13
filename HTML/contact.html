@@ -15,6 +15,7 @@
             background-repeat: no-repeat;
             background-position:center;
             background-size:cover;
+            color: white;
         }
     </style>
 </head>
@@ -58,30 +59,26 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class=" mt-5" id="form">
-                <h1 class="text-center text-white mb-4">Contact Us</h1>
-                    <form action="" method="POST" role="form">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group mt-3">
-                          <input type="text" class="form-control" name="surname" placeholder="Your Surname" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group mt-3">
-                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="text-center mt-4">
-                            <button type="submit">Send Message</button>
-                        </div>
-                    </form>
+    <div class="container-login mt-5 d-flex justify-content-center">
+        <div class="row" id="login_signup">
+            <div class="d-flex justify-content-center align-items-center">
+                <form action="https://formspree.io/f/xayrrbpg">
+                    <div>
+                        <h1>Contact Us</h1>
+                    </div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" class="rounded" placeholder="Name" required><br><br>
+                    <label for="surname">Surname:</label><br>
+                    <input type="text" name="surname" class="rounded" placeholder="Surname" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" class="rounded" placeholder="Email" required><br><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br><br>
+                    <button class="contact_btn">Login</button><br><br>
+                </form>
             </div>
         </div>
     </div>
+    <div class="mt-5 pt-5" ></div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
