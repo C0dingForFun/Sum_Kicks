@@ -273,7 +273,23 @@ button:hover, button a:hover{
         width:100%;
     }
 
-    #products{
+    #nike{
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
+        margin-left:40px;
+        margin-top: 50px;
+    }
+
+    #puma{
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
+        margin-left:40px;
+        margin-top: 50px;
+    }
+
+    #addidas{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;

@@ -75,22 +75,22 @@ const nWomen2 = new nikeKicks(1, 'Nike', 'Air Max',
 const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png', 'hdjdbdjdh', 1,1500);
 
-//Puma
-// function pumaKicks(id, brand, name, image, description, quantity, price){
-//   this.id = id;
-//   this.brand = brand;
-//   this.name = name;
-//   this.image = image;
-//   this.description = description;
-//   this.quantity = quantity;
-//   this.price = price;
-// }
-// const pMen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-// const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-// const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-// const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-// const pWomen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-// const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+Puma
+function pumaKicks(id, brand, name, image, description, quantity, price){
+  this.id = id;
+  this.brand = brand;
+  this.name = name;
+  this.image = image;
+  this.description = description;
+  this.quantity = quantity;
+  this.price = price;
+}
+const pMen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pWomen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 
 //Addidas
 // function addidasKicks(id, brand, name, image, description, quantity, price){
@@ -115,17 +115,27 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
     let viewProducts = document.querySelector('#view')
     localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
     
-    nKicks.forEach(viewProducts =>{
-            viewProducts.addEventListener('click',(event)=>{
-                viewKicks(event.target.value);
-            })
+    nKicks.forEach(button =>{
+        button.addEventListener('click',(event)=>{
+            viewKicks(event.target.value);
+        })
     })
 
-    function viewKicks(id){
-            let [nKicks] = nKicks.filter(object => object.id === +id);
-            purcKicks.push(nKicks);
-            localStorage.setItem('cart',JSON.stringify(nKicks));
-    }
+    // function viewKicks(id){
+    //         let [nKicks] = nKicks.filter(object => object.id === +id);
+        
+    // }
+    // viewKicks();
+    // function viewKicks() {
+    //     try {
+    //         const viewKicks = nKicks.id;
+    //         // nKicks[index] = viewKicks;
+    //         // localStorage.setItem('products', JSON.stringify(products));
+    //         // adminContent(products);
+    //     } catch (e) {
+    //         alert('Cannot find shoe');
+    //     }
+    // }
 
     nKicks.forEach(nike => {
         products.innerHTML += `
@@ -134,24 +144,25 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
                                     <div class="card-body">
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button><button value="${nike.id}" class="products">Add To Cart</button>
+                                        <button id="view" type="button" value="${nike.id}" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button>
+                                        <button value="${nike.id}" class="products">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${nike.name}</h1>
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${nike.name}</h1>
+                                                </div>
+                                                <div class="modal-body w-80 row">
+                                                    <div><img src="${nike.image}" style="width:10rem;">
+                                                    <p>${nike.description}</p></div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                                                </div>
                                             </div>
-                                            <div class="modal-body w-80 row">
-                                                <div><img src="${nike.image}" style="width:10rem; margin:auto">
-                                                <p>${nike.description}</p></div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Add To Cart</button>
-                                            </div>
-                                          </div>
                                         </div>
-                                    </div>  
+                                     </div>  
                                    </div>    
                                 </div>  
                             `
