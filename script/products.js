@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-// function myKicks(id, brand, name, image, description, quantity, price){
-//     this.id = id;
-//     this.name = name;
-//     this.name = name;
-//     this.brand = brand;
-//     this.image = image;
-//     this.description = description
-//     this.quantity = quantity;
-//     this.price = price;
-=======
-
 function myKicks(id, brand, name, image, description, quantity, price){
     this.id = id;
     this.name = name;
@@ -19,7 +7,7 @@ function myKicks(id, brand, name, image, description, quantity, price){
     this.description = description
     this.quantity = quantity;
     this.price = price;
->>>>>>> 610176c8563b71f51c5d620d2280cfd6036ea2fd
+
     
 // }
 
@@ -169,6 +157,7 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
             addTocart(event.target.value);
         })
     })
+
 
 
 
