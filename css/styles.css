@@ -215,6 +215,13 @@ button:hover, button a:hover{
     color:white;
     font-size: 20px;
 }
+
+#welcome2{
+    height:400px;
+    background-color: lightgreen;
+    color:white;
+    font-size: 20px;
+}
 #welcome-img{
     background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Green_Jordan.jpg');
     background-repeat: no-repeat;
@@ -289,6 +296,15 @@ button:hover, button a:hover{
 /* Contact page */
 @media only screen and (max-width: 600px){
 
+    nav{
+        background-color:rgba(3, 214, 45, 0.5) ;
+    }
+    
+    .logo{
+        position: relative;
+        bottom:15px;
+    }
+
     .nav-item a{
         font-size:20px;
         color:white;
@@ -333,15 +349,33 @@ button:hover, button a:hover{
         display:flex;
     }
 
+    #welcome{
+        height: 200px;
+        position: relative;
+        top:100px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    #lastImg{
+        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Jordan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:200px;
+        opacity: 0.8;
+    }
+
     #about{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
     }
 
     #about_Us{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
