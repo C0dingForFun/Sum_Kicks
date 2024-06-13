@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // function myKicks(id, brand, name, image, description, quantity, price){
 //     this.id = id;
 //     this.name = name;
@@ -7,6 +8,18 @@
 //     this.description = description
 //     this.quantity = quantity;
 //     this.price = price;
+=======
+
+function myKicks(id, brand, name, image, description, quantity, price){
+    this.id = id;
+    this.name = name;
+    this.name = name;
+    this.brand = brand;
+    this.image = image;
+    this.description = description
+    this.quantity = quantity;
+    this.price = price;
+>>>>>>> 610176c8563b71f51c5d620d2280cfd6036ea2fd
     
 // }
 
@@ -137,4 +150,26 @@ const aWomen3 = new nikeKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
                                     </div>    
                                 </div>  
                      `
+<<<<<<< HEAD
     });
+=======
+    });
+    
+    let purcKicks = []
+    
+    let purcBtns = document.querySelectorAll('.purchase');
+    function addTocart(id){
+        let [kicks] = kicks.filter(object => object.id === +id);
+        purcKicks.push(kicks);
+        localStorage.setItem('cart',JSON.stringify(purcKicks));
+    }
+    
+    purcBtns.forEach(button =>{
+        button.addEventListener('click',(event)=>{
+            addTocart(event.target.value);
+        })
+    })
+
+
+
+>>>>>>> 610176c8563b71f51c5d620d2280cfd6036ea2fd
