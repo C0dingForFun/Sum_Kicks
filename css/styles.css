@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: "Mukta", sans-serif;
+}
+
 /* Home page */
+
 nav{
     background-color:rgba(3, 214, 45, 0.5) ;
+}
+
+.logo{
+    position: relative;
+    bottom: 15px;
 }
 
 .nav-item a{
@@ -199,80 +212,85 @@ button:hover, button a:hover{
 }
 
 /* About page */
-
-.container-about{
-    width: 100%;
-    height:auto;
-}
-
-#welcome{
-    height:400px;
-    background-color: lightgreen;
-    color:white;
-    font-size: 20px;
-}
-#welcome-img{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
-
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about_Us{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about{
-    height:400px;
-    background-color: black;
-    color:white;
-    writing-mode:vertical-rl;
-}
-
-#about h1{
-    transform: rotate(180deg);
-}
-
-#about_Us h1{
-    transform: rotate(0);
-}
-
-
-#lastImg{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    height:400px;
-}
-
-/* About page */
-
-/* Contact page */
-
-    #contact img{
-        width:400px;
-        height:500px;
+    .container-about{
+        width: 100%;
+        height:auto;
     }
 
-    #form{
-        width:400px;
-        border: double 2px black;
-        padding: 1em;
-        display:flex;
+    #welcome{
+        height:400px;
+        background-color: lightgreen;
+        color:white;
+        font-size: 20px;
+    }
+    #welcome-img{
+        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:400px;
+    }
+
+    #about{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
+
+    #about_Us{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
+
+    #about{
+        height:400px;
+        background-color: black;
+        color:white;
+        writing-mode:vertical-rl;
+    }
+
+    #about h1{
+        transform: rotate(180deg);
+    }
+
+    #about_Us h1{
+        transform: rotate(0);
+    }
+
+
+    #lastImg{
+        background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:400px;
+    }
+/* About Page */
+    
+/* Products page */
+    .card-body button{
+        width:100%;
+    }
+
+    #products{
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
+        margin-left:50px;
+        margin-top: 50px;
+    }
+
+/* Products page */
+
+/* Cart page */
+    main table{
+        display: flex;
         justify-content: center;
     }
+
 
     .contact_btn{
         width: 60px;
@@ -283,6 +301,12 @@ button:hover, button a:hover{
         width: 12vw;
     }
 /* Contact page */
+    tr img{
+        width:18rem;
+    } 
+/* Cart page */
+
+
 @media only screen and (max-width: 600px){
 
     .nav-item a{
@@ -299,10 +323,6 @@ button:hover, button a:hover{
         color:green;
         text-shadow:5px 5px grey;
         border-bottom: groove 2px green;
-    }
-    
-    .active a{
-        color:green;
     }
 
     #sales > div{
@@ -330,14 +350,14 @@ button:hover, button a:hover{
     }
 
     #about{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
     }
 
     #about_Us{
-        height:300px;
+        height:100px;
         background-color: black;
         color:white;
         writing-mode:horizontal-tb;
@@ -345,5 +365,13 @@ button:hover, button a:hover{
 
     #about h1{
         transform: rotate(0);
+    }
+
+    #products{
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+        gap:3em;
+        margin-left:5px;
+        margin-top: 50px;
     }
 }
