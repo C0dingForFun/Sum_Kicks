@@ -8,6 +8,10 @@ nav{
     background-color:rgba(3, 214, 45, 0.5) ;
 }
 
+.logo{
+    position: relative;
+    bottom:15px;
+}
 .nav-item a{
     font-size:20px;
     color:black;
@@ -207,7 +211,7 @@ button:hover, button a:hover{
     font-size: 20px;
 }
 #welcome-img{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Green_Jordan.jpg');
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Green_Jordan.jpg');
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
@@ -245,7 +249,7 @@ button:hover, button a:hover{
 
 
 #lastImg{
-    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/Jordan.jpg');
+    background-image: url('https://c0dingforfun.github.io/kicksPics/Images/About/Jordan.jpg');
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
