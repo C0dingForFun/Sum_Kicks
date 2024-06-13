@@ -176,7 +176,7 @@ footer{
     border:solid 2px black;
     width: 400px;
     height:500px;
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0.7);
 }
 
 .login-button{
@@ -298,8 +298,6 @@ button:hover, button a:hover{
         display: flex;
         justify-content: center;
     }
-
-
     .contact_btn{
         width: 60px;
         background-color: white;
