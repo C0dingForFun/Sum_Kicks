@@ -157,11 +157,11 @@ const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
 //     let purcKicks = []
     
 //     let purcBtns = document.querySelectorAll('.purchase');
-    function addTocart(id){
-        let [kicks] = kicks.filter(object => object.id === +id);
-        purcKicks.push(kicks);
-        localStorage.setItem('cart',JSON.stringify(purcKicks));
-    }
+    // function addTocart(id){
+    //     let [kicks] = kicks.filter(object => object.id === +id);
+    //     purcKicks.push(kicks);
+    //     localStorage.setItem('cart',JSON.stringify(purcKicks));
+    // }
     
 //     purcBtns.forEach(button =>{
 //         button.addEventListener('click',(event)=>{
