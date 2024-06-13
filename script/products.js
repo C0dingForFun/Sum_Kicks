@@ -75,7 +75,7 @@ const nWomen2 = new nikeKicks(1, 'Nike', 'Air Max',
 const nWomen3 = new nikeKicks(1, 'Nike', 'GT-Cut Cross',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png', 'hdjdbdjdh', 1,1500);
 
-Puma
+// Puma
 function pumaKicks(id, brand, name, image, description, quantity, price){
   this.id = id;
   this.brand = brand;
@@ -85,7 +85,9 @@ function pumaKicks(id, brand, name, image, description, quantity, price){
   this.quantity = quantity;
   this.price = price;
 }
-const pMen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+const pMen1 = new pumaKicks(1, 'Puma', 'Slipstream Leather',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Slipstream_Leather.png',
+     'hdjdbdjdh', 1,1500);
 const pMen2 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 const pMen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
 const pWomen1 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
@@ -111,34 +113,16 @@ const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
 
 
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
-    let products = document.querySelector('#products');
-    let viewProducts = document.querySelector('#view')
+    let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
+    let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
+
+    let nProducts = document.querySelector('#nike');
+    let pProducts = document.querySelector('#puma');
+    let aProducts = document.querySelector('#addidas');
     localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
     
-    nKicks.forEach(button =>{
-        button.addEventListener('click',(event)=>{
-            viewKicks(event.target.value);
-        })
-    })
-
-    // function viewKicks(id){
-    //         let [nKicks] = nKicks.filter(object => object.id === +id);
-        
-    // }
-    // viewKicks();
-    // function viewKicks() {
-    //     try {
-    //         const viewKicks = nKicks.id;
-    //         // nKicks[index] = viewKicks;
-    //         // localStorage.setItem('products', JSON.stringify(products));
-    //         // adminContent(products);
-    //     } catch (e) {
-    //         alert('Cannot find shoe');
-    //     }
-    // }
-
     nKicks.forEach(nike => {
-        products.innerHTML += `
+        nProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
                                     <img src="${nike.image}" class="card-img-top">
                                     <div class="card-body">
@@ -168,8 +152,93 @@ const pWomen3 = new pumaKicks(1, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1
                             `
 
         });
-    
 
+    pKicks.forEach(puma => {
+        pProducts.innerHTML += `
+                                <div class="card" style="width: 18rem;">
+                                    <img src="${puma.image}" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${puma.name}</h5>
+                                        <p class="card-text">R${puma.price}</p>
+                                        <button id="view" type="button" value="${puma.id}" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button>
+                                        <button value="${puma.id}" class="products">Add To Cart</button>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${puma.name}</h1>
+                                                </div>
+                                                <div class="modal-body w-80 row">
+                                                    <div><img src="${puma.image}" style="width:10rem;">
+                                                    <p>${puma.description}</p></div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>  
+                                   </div>    
+                                </div>  
+                            `
+
+        });
+
+    // aKicks.forEach(addidas => {
+    //     aProducts.innerHTML += `
+    //                             <div class="card" style="width: 18rem;">
+    //                                 <img src="${nike.image}" class="card-img-top">
+    //                                 <div class="card-body">
+    //                                     <h5 class="card-title">${nike.name}</h5>
+    //                                     <p class="card-text">R${nike.price}</p>
+    //                                     <button id="view" type="button" value="${nike.id}" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button>
+    //                                     <button value="${nike.id}" class="products">Add To Cart</button>
+    //                                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    //                                         <div class="modal-dialog">
+    //                                             <div class="modal-content">
+    //                                             <div class="modal-header">
+    //                                                 <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${nike.name}</h1>
+    //                                             </div>
+    //                                             <div class="modal-body w-80 row">
+    //                                                 <div><img src="${nike.image}" style="width:10rem;">
+    //                                                 <p>${nike.description}</p></div>
+    //                                             </div>
+    //                                             <div class="modal-footer">
+    //                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    //                                                 <button type="button" class="btn btn-primary">Add To Cart</button>
+    //                                             </div>
+    //                                         </div>
+    //                                     </div>
+    //                                  </div>  
+    //                                </div>    
+    //                             </div>  
+    //                         `
+
+    //     });
+
+    
+    // nKicks.forEach(button =>{
+    //     button.addEventListener('click',(event)=>{
+    //         viewKicks(event.target.value);
+    //     })
+    // })
+
+    // function viewKicks(id){
+    //         let [nKicks] = nKicks.filter(object => object.id === +id);
+        
+    // }
+    // viewKicks();
+    // function viewKicks() {
+    //     try {
+    //         const viewKicks = nKicks.id;
+    //         // nKicks[index] = viewKicks;
+    //         // localStorage.setItem('products', JSON.stringify(products));
+    //         // adminContent(products);
+    //     } catch (e) {
+    //         alert('Cannot find shoe');
+    //     }
+    // }
     
 //     let purcKicks = []
     
