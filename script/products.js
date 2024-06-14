@@ -45,10 +45,10 @@ const nWomen3 = new nikeKicks(6, 'Nike', 'GT-Cut Cross (Women)',
      'https://c0dingforfun.github.io/kicksPics/Images/Nike/Women/GT_Cut_Cross.png',
       'hdjdbdjdh', 1,1100);
 
-// Puma
-function pumaKicks(id, brand, name, image, description, quantity, price){
-  this.id = id;
-  this.brand = brand;
+      // Puma
+      function pumaKicks(id, brand, name, image, description, quantity, price){
+          this.id = id;
+          this.brand = brand;
   this.name = name;
   this.image = image;
   this.description = description;
@@ -64,26 +64,26 @@ const pMen3 = new pumaKicks(3, 'Puma', 'RBD Game(Men)',
      'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/RBD_Game.png', 'hdjdbdjdh',1,1290);
 const pWomen1 = new pumaKicks(4, 'Puma', 'Lajla_Leather(Women)',
      'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Lajla_Leather.png', 'hdjdbdjdh', 1,1240);
-const pWomen2 = new pumaKicks(5, 'Puma', 'Carina Street Mid(Women)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Carina_Street_Mid.png',  'hdjdbdjdh', 1,1100);
+     const pWomen2 = new pumaKicks(5, 'Puma', 'Carina Street Mid(Women)',
+        'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Carina_Street_Mid.png',  'hdjdbdjdh', 1,1100);
 const pWomen3 = new pumaKicks(6, 'Puma', 'Mayze OW(Women)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Mayze_OW.png', 'hdjdbdjdh', 1,1125);
-
-// Addidas
-function addidasKicks(id, brand, name, image, description, quantity, price){
-  this.id = id;
-  this.brand = brand;
-  this.name = name;
-  this.image = image;
-  this.description = description;
-  this.quantity = quantity;
-  this.price = price;
-}
-const aMen1 = new addidasKicks(1,'Addidas','Yeezy Boost(Men)',
-    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Yeezy_Boost.png','uevfuiev',1,1350)
-const aMen2 = new addidasKicks(2,'Addidas','Retrophy F2(Men)',
-    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Retrophy_F2.png','uevfuiev',1,1490)
-const aMen3 = new addidasKicks(3,'Addidas','Ultraboost 1.0',
+    'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Mayze_OW.png', 'hdjdbdjdh', 1,1125);
+    
+    // Addidas
+    function addidasKicks(id, brand, name, image, description, quantity, price){
+        this.id = id;
+        this.brand = brand;
+        this.name = name;
+        this.image = image;
+        this.description = description;
+        this.quantity = quantity;
+        this.price = price;
+        }
+        const aMen1 = new addidasKicks(1,'Addidas','Yeezy Boost(Men)',
+            'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Yeezy_Boost.png','uevfuiev',1,1350)
+            const aMen2 = new addidasKicks(2,'Addidas','Retrophy F2(Men)',
+                'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Retrophy_F2.png','uevfuiev',1,1490)
+                const aMen3 = new addidasKicks(3,'Addidas','Ultraboost 1.0',
     'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Ultraboost_1_0.png','uevfuiev',1,400)
 const aWomen1 = new addidasKicks(4,'Addidas','Alpha Boost V1',
     'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/ALPHABOOST_V1.png','uevfuiev',1,1340)
@@ -92,16 +92,19 @@ const aWomen2 = new addidasKicks(5,'Addidas','Yeezy Boost',
 const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
     'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Breaknet_2_0.png','uevfuiev',1,1520)
 
-
-    let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
-    let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
-    let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
-
+    
     let nProducts = document.querySelector('#nike');
     let pProducts = document.querySelector('#puma');
     let aProducts = document.querySelector('#addidas');
-    localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
     
+    let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
+    let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
+    let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
+    
+    localStorage.setItem('nKicks', JSON.stringify('nKicks'));
+    localStorage.setItem('pKicks', JSON.stringify('pKicks'));
+    localStorage.setItem('aKicks', JSON.stringify('aKicks'));
+
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
@@ -133,9 +136,6 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
                                    </div>    
                                 </div>  
                             `;
-
-        // modal.innerHTML = `${nike.id}`
-
         });
 
     pKicks.forEach(puma => {
@@ -168,7 +168,6 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
                                    </div>    
                                 </div>  
                             `
-
         });
 
     aKicks.forEach(addidas => {
@@ -201,23 +200,23 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
                                    </div>    
                                 </div>  
                             `
-
         });
 
 
-    let purcNike = []
-    let purcNikeBtns = document.querySelectorAll('.purchN');
-    function addNikeToCart(id){
-        console.log(id);
-        let [nike] = nike.filter(object => object.id === +id);
-        console.log(nike);
-        purcNike.push(nike);
-        localStorage.setItem('nikeCart',JSON.stringify(purcNike));
-    }
+    // let purcNike = []
+    // let purcNikeBtns = document.querySelectorAll('.purchN');
+    // function addNikeToCart(){
+    //     // console.log(id);
+    //     purcNikeBtns.forEach(button =>{
+    //     button.addEventListener('click',()=>{
+    //     let [nike] = nike.find(object => object.id == purcNikeBtns.value);
+    //     purcNike.push(nike);
+    //     console.log(nike);
+    //     localStorage.setItem('nikeCart',JSON.stringify(purcNike));
+    //     })
+    //     })
+    // }
+    // addNikeToCart();
     
-    purcNikeBtns.forEach(button =>{
-        button.addEventListener('click',(event)=>{
-            addNikeToCart(event.target.value);
-        })
-    })
+    
 
