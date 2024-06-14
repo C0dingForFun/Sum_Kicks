@@ -272,10 +272,21 @@ button:hover, button a:hover{
         background-position:center;
         background-size:cover;
         height:400px;
-    }
-
+        }
+        
 /*  About Page*/
-    
+        
+    /* Contact page */
+        textarea{
+            width: 12vw;
+        }
+            
+            .contact_btn{
+                width: 60px;
+                background-color: white;
+            }
+    /* Contact page */
+
 /* Products page */
     .card-body button{
         width:100%;
@@ -323,35 +334,22 @@ button:hover, button a:hover{
         margin-top: 50px;
 
     }
+    /* Products page */
 
-/* Products page */
 
 /* Cart page */
 
-    main table th td{
+    table th td{
         display: flex;
         justify-content: center;
     }
-    tr img{
-        width:18rem;
+    
+    td img{
+        width:20vw;
     } 
-/* Cart Page */
-    main table{
-        display: flex;
-        justify-content: center;
-    }
-    .contact_btn{
-        width: 60px;
-        background-color: white;
-    }
 
-    textarea{
-        width: 12vw;
-    }
-/* Contact page */
-    tr img{
-        width:18rem;
-    } 
+/* Cart Page */
+
 
 
 
