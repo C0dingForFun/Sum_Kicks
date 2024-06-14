@@ -240,16 +240,18 @@ function addTocart(id){
     })
 })
     
-
-    let search = document.querySelector('#search');
-    search.addEventListener('mySearch', (event) => {
-        const searchItem = event.target.value.trim().toLowerCase();
-        if (searchItem.length < 1) {
-            addTocart(kicks);
-        }
-        let searchedProducts = allList.filter(myKicks =>
-            myKicks.name.toLowerCase().includes(searchItem));
-            console.log(searchedProducts);
-            addTocart(searchedProducts);
-    });
+// function display(){
+//     let searchBtn = document.querySelector('#search');
+//     let seachItem = document.querySelector('#mySearch')
+//     searchBtn.addEventListener('click', (event) => {
+//         const searchItem = event.target.value.trim().toLowerCase();
+//         main.innerHTML = ``;
+//         let search= kicks.filter(myKicks =>{
+//             return myKicks.name.toLowerCase().includes(searchItem.value.toLowerCase())
+//     })
+    
+// })
+//     }
+// display(searchItem);
+    
 
