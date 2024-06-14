@@ -299,8 +299,15 @@ button:hover, button a:hover{
         gap:3em;
         place-items: center;
     }
-    #filter{
+
+    #filter input{
         width:20vw;
+        height:5vh;
+    }
+
+    .products-img{
+        display: grid;
+        place-items: center;
     }
 
 /* Products page */
