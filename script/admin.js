@@ -3,7 +3,7 @@ let tbody = document.querySelector('tbody');
 console.log(purchasedKicks);
 localStorage.setItem('cart', JSON.stringify(items))
 
-purchasedKicks.forEach(item => {
+items.forEach(item => {
     tbody.innerHTML += `
                 <tr>
                     <td>${item.image}</td>
