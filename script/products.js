@@ -189,9 +189,9 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                     <div class="card-body">
                                         <h5 class="card-title">${addidas.name}</h5>
                                         <p class="card-text">R${addidas.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2${addidas.id}">View product</button>
+                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop3${addidas.id}">View product</button>
                                         <button value="${addidas.id}" class="products purchItems">Add To Cart</button>
-                                        <div class="modal fade" id="staticBackdrop2${addidas.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal fade" id="staticBackdrop3${addidas.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                 <div class="modal-header">
