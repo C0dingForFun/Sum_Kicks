@@ -1,3 +1,4 @@
+
 let purchasedKicks = JSON.parse(localStorage.getItem('nikeKicks'))
 let tbody = document.querySelector('tbody');
 console.log(purchasedKicks);
@@ -10,6 +11,5 @@ purchasedKicks.forEach(item => {
                     <td>${item.name}</td>
                     <td>${item.quantity}</td>
                     <td>${item.price}</td>
-                </tr>                 
-                        `
-});
+            `
+}

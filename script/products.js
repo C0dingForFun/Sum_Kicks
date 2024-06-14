@@ -123,8 +123,8 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                     <div class="card-body">
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
-                                        <button value="${nike.id}" class="purchItems">Add To Cart</button>
+
+
                                         <div class="modal fade" id="staticBackdrop${nike.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -139,6 +139,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
                                                     <button type="button" class="btn btn-primary purchItems" value="${nike.id}">Add To Cart</button>
                                                 </div>
                                             </div>
@@ -239,6 +240,7 @@ function addTocart(id){
     })
 })
     
+
     let search = document.querySelector('#search');
     search.addEventListener('mySearch', (event) => {
         const searchItem = event.target.value.trim().toLowerCase();
@@ -250,3 +252,4 @@ function addTocart(id){
             console.log(searchedProducts);
             addTocart(searchedProducts);
     });
+
