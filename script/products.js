@@ -94,7 +94,6 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
 
 
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
-    let view = document.querySelector('#view');
     let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
     let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
 
@@ -102,7 +101,6 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
     let pProducts = document.querySelector('#puma');
     let aProducts = document.querySelector('#addidas');
     localStorage.setItem('nKicks', JSON.stringify('nKicks')) || [];
-    // let modal = document.querySelector('#staticBackdrop');
     
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
@@ -210,7 +208,9 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
     let purcNike = []
     let purcBtns = document.querySelectorAll('.purchN');
     function addNikeToCart(id){
+        console.log(id);
         let [nike] = nike.filter(object => object.id === +id);
+        console.log(nike);
         purcNike.push(nike);
         localStorage.setItem('nikeCart',JSON.stringify(purcNike));
     }
