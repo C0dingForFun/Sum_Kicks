@@ -288,8 +288,7 @@ button:hover, button a:hover{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
         gap:3em;
-        margin-left:50px;
-        margin-top: 50px;
+        place-items: center;
 
     }
     /* Products page */
@@ -297,7 +296,9 @@ button:hover, button a:hover{
 
 /* Cart Page */
     
-    #cart img{
+    #cart{
+        display: flex;
+        flex-direction: column;
         border: solid 5px black;
     }
 

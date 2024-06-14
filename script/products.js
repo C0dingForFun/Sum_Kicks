@@ -123,7 +123,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                     <div class="card-body">
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1${nike.id}">View product</button>
+                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
                                         <button value="${nike.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop${nike.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
