@@ -206,41 +206,19 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
 
         });
 
-    
-    // nKicks.forEach(button =>{
-    //     button.addEventListener('click',(event)=>{
-    //         viewKicks(event.target.value);
-    //     })
-    // })
 
-    // function viewKicks(id){
-    //         let [nKicks] = nKicks.filter(object => object.id === +id);
-        
-    // }
-    // viewKicks();
-    // function viewKicks() {
-    //     try {
-    //         const viewKicks = nKicks.id;
-    //         // nKicks[index] = viewKicks;
-    //         // localStorage.setItem('products', JSON.stringify(products));
-    //         // adminContent(products);
-    //     } catch (e) {
-    //         alert('Cannot find shoe');
-    //     }
-    // }
+    let purcNike = []
     
-//     let purcKicks = []
+    let purcBtns = document.querySelectorAll('.purchase');
+    function addNikeToCart(id){
+        let [nike] = nike.filter(object => object.id === +id);
+        purcNike.push(kicks);
+        localStorage.setItem('nikeCart',JSON.stringify(purcNike));
+    }
     
-//     let purcBtns = document.querySelectorAll('.purchase');
-    // function addTocart(id){
-    //     let [kicks] = kicks.filter(object => object.id === +id);
-    //     purcKicks.push(kicks);
-    //     localStorage.setItem('cart',JSON.stringify(purcKicks));
-    // }
-    
-//     purcBtns.forEach(button =>{
-//         button.addEventListener('click',(event)=>{
-//             addTocart(event.target.value);
-//         })
-//     })
-// }
+    purcBtns.forEach(button =>{
+        button.addEventListener('click',(event)=>{
+            addNikeToCart(event.target.value);
+        })
+    })
+
