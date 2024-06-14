@@ -296,16 +296,10 @@ button:hover, button a:hover{
 
 
 /* Cart Page */
-    main table{
-        display: flex;
-        justify-content: center;
+    
+    #cart img{
+        border: solid 5px black;
     }
-
-    td #cart{
-        object-fit: contain;
-        width:200px;
-        height:100px;
-    } 
 
 /* Cart Page */
 
