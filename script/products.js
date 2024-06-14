@@ -202,7 +202,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary" value="${puma.id}>Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary" value="${addidas.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,9 +212,11 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                             `
         });
 
+let cartItems = JSON.parse(localStorage.getItem('purchasedNikes'))
+console.log(cartItems);
 
-let purchNike = []
-    
+let purchNike = cartItems || [];
+console.log(purchNike);
 let purcBtns = document.querySelectorAll('.purchNikes');
 
 function addTocart(id){
@@ -229,7 +231,5 @@ function addTocart(id){
         addTocart(event.target.value);
     })
 })
-    
-    
     
 
