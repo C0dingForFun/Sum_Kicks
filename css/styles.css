@@ -339,13 +339,15 @@ button:hover, button a:hover{
 
 /* Cart page */
 
-    table th td{
+    table {
         display: flex;
         justify-content: center;
     }
-    
-    td img{
-        width:20vw;
+
+    td #cart{
+        object-fit: contain;
+        width:200px;
+        height:100px;
     } 
 
 /* Cart Page */
