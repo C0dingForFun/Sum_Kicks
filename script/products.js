@@ -206,7 +206,7 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
 
 
     let purcNike = []
-    let purcBtns = document.querySelectorAll('.purchN');
+    let purcNikeBtns = document.querySelectorAll('.purchN');
     function addNikeToCart(id){
         console.log(id);
         let [nike] = nike.filter(object => object.id === +id);
@@ -215,8 +215,8 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
         localStorage.setItem('nikeCart',JSON.stringify(purcNike));
     }
     
-    purcBtns.forEach(nKicks =>{
-        nKicks.addEventListener('click',(event)=>{
+    purcNikeBtns.forEach(button =>{
+        button.addEventListener('click',(event)=>{
             addNikeToCart(event.target.value);
         })
     })
