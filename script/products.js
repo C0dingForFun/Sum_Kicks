@@ -114,7 +114,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
     
     let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3,pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     
-    localStorage.setItem('kicks', JSON.stringify('kicks'));
+    localStorage.setItem('kicks', JSON.stringify('myKicks'));
 
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
@@ -225,7 +225,6 @@ function addTocart(id){
     if(index == -1){
         let [n] = kicks.filter(object => object.id == +id);
             purchKicks.push(n);
-        // purchKicks.push(kicks.find(item => item.id == id));
     }
     else{
         purchKicks[index].quantity++;
@@ -240,18 +239,18 @@ function addTocart(id){
     })
 })
     
-// function display(){
-//     let searchBtn = document.querySelector('#search');
-//     let seachItem = document.querySelector('#mySearch')
-//     searchBtn.addEventListener('click', (event) => {
-//         const searchItem = event.target.value.trim().toLowerCase();
-//         main.innerHTML = ``;
-//         let search= kicks.filter(myKicks =>{
-//             return myKicks.name.toLowerCase().includes(searchItem.value.toLowerCase())
-//     })
+function display(){
+    let searchBtn = document.querySelector('#search');
+    let searchItem = document.querySelector('#mySearch')
+    searchBtn.addEventListener('click', (event) => {
+        const searchItem = event.target.value.trim().toLowerCase();
+        main.innerHTML = ``;
+        let search= kicks.filter(myKicks =>{
+            return myKicks.name.toLowerCase().includes(searchItem.value.toLowerCase())
+    })
     
-// })
-//     }
-// display(searchItem);
+})
+    }
+display(searchItem);
     
 

@@ -21,10 +21,7 @@ function nikeKicks(id, brand, name, image, description, quantity, price){
           'Lace up and feel the legacy in a champion running shoe that helped define the 90s. Worn by presidents, revolutionised through collabs and celebrated through rare colourways, its striking visuals, Waffle outsole and exposed Air cushioning keep the Air Max 90 alive and well.',
           1,1300);
   
-      let tProducts = document.querySelector('#trending');
-    //   let pProducts = document.querySelector('#puma');
-    //   let aProducts = document.querySelector('#addidas');
-      
+      let tProducts = document.querySelector('#trending');   
       let tKicks = [nMen1, nMen2, nMen3,]
       let kicks = [nMen1, nMen2, nMen3,,]
       
