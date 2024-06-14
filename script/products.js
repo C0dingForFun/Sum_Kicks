@@ -156,7 +156,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                         <h5 class="card-title">${puma.name}</h5>
                                         <p class="card-text">R${puma.price}</p>
                                         <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1${puma.id}">View product</button>
-                                        <button value="${puma.id}" class="products">Add To Cart</button>
+                                        <button value="${puma.id}" class="products purchN">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop1${puma.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -170,7 +170,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary" value="${puma.id}">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchN" value="${puma.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -202,7 +202,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary" value="${addidas.id}">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchN" value="${addidas.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -219,14 +219,17 @@ let purchKicks = cartItems || [];
 let purcBtns = document.querySelectorAll('.purchNikes');
 
 function addTocart(id){
-    let q = 0;
-    if(purchKicks){
-        pumaKicks.reduced(q);
+    let index = purchKicks.findIndex(item => item.id == id);
+    if(index == -1){
+        let [n] = kicks.filter(object => object.id == +id);
+            purchKicks.push(n);
+        // purchKicks.push(kicks.find(item => item.id == id));
     }
-    
-    let [n] = kicks.filter(object => object.id == +id);
-        purchKicks.push(n);
-        localStorage.setItem('nikeKicks',JSON.stringify(purchKicks));
+    else{
+        purchKicks[index].quantity++;
+    }
+    localStorage.setItem('nikeKicks',JSON.stringify(purchKicks));
+
     }
             
     purcBtns.forEach(button =>{
