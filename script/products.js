@@ -112,7 +112,7 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
                                         <button id="view" type="button" value="${nike.id}" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
-                                        <button value="${nike.id}" class="products">Add To Cart</button>
+                                        <button value="${nike.id}" class="purchN">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop${nike.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -127,7 +127,7 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchN" value="${nike.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -208,16 +208,15 @@ const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
 
 
     let purcNike = []
-    
-    let purcBtns = document.querySelectorAll('.purchase');
+    let purcBtns = document.querySelectorAll('.purchN');
     function addNikeToCart(id){
         let [nike] = nike.filter(object => object.id === +id);
-        purcNike.push(kicks);
+        purcNike.push(nike);
         localStorage.setItem('nikeCart',JSON.stringify(purcNike));
     }
     
-    purcBtns.forEach(button =>{
-        button.addEventListener('click',(event)=>{
+    purcBtns.forEach(nKicks =>{
+        nKicks.addEventListener('click',(event)=>{
             addNikeToCart(event.target.value);
         })
     })
