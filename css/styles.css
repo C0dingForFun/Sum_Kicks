@@ -301,13 +301,17 @@ button:hover, button a:hover{
     }
 
     #filter input{
-        width:20vw;
-        height:5vh;
+        width:25vw;
+        
     }
 
     .products-img{
         display: grid;
         place-items: center;
+    }
+
+    .dropdown-center button{
+        background-color:rgba(3, 214, 45, 0.5) ;
     }
 
 /* Products page */
@@ -407,10 +411,14 @@ button:hover, button a:hover{
     }
 
     #products{
-        display: grid;
-        grid-template-columns: repeat( auto-fill, minmax(400px, 1fr) );
+         display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(10px, 1fr) );
         gap:3em;
-        margin-left:10px;
-        margin-top: 50px;
+        place-items: center;  
+        margin-right:20px;
+    } 
+
+    #products .card{
+        margin-right: 20px;
     }
 }

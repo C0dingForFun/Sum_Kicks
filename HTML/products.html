@@ -52,8 +52,16 @@
     <main class="overflow-hidden">
       <div class="d-flex justify-content-center mt-4 gap-3" id="filter">
           <input type="text" size="50" placeholder="Search...">
-          <h4 class="border p-1">Filter</h4>
-          <button>Price</button>
+          <div class="dropdown-center">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filter:
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </div>
       </div>
 
       <h1 class="text-center mt-2">Nike</h1>

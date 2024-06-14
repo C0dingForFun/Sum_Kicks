@@ -57,15 +57,17 @@ function pumaKicks(id, brand, name, image, description, quantity, price){
 }
 const pMen1 = new pumaKicks(1, 'Puma', 'Slipstream Leather(Men)',
      'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Slipstream_Leather.png',
-     'hdjdbdjdh', 1,1500);
+     'hdjdbdjdh', 1,1600);
 const pMen2 = new pumaKicks(2, 'Puma', 'Caven Mid(Men)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Caven_Mid.png', 'hdjdbdjdh', 1,1500);
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/Caven_Mid.png', 'hdjdbdjdh',1,1300);
 const pMen3 = new pumaKicks(3, 'Puma', 'RBD Game(Men)',
-     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/RBD_Game.png', 'hdjdbdjdh', 1,1500);
-const pWomen1 = new pumaKicks(4, 'Puma', 'Puma',
-     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/', 'hdjdbdjdh', 1,1500);
-const pWomen2 = new pumaKicks(5, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
-const pWomen3 = new pumaKicks(5, 'Nike', 'Air Max', 'drjdjdhhdh', 'hdjdbdjdh', 1,1500);
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/RBD_Game.png', 'hdjdbdjdh',1,1290);
+const pWomen1 = new pumaKicks(4, 'Puma', 'Lajla_Leather(Women)',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Lajla_Leather.png', 'hdjdbdjdh', 1,1240);
+const pWomen2 = new pumaKicks(5, 'Puma', 'Carina Street Mid(Women)',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Carina_Street_Mid.png',  'hdjdbdjdh', 1,1100);
+const pWomen3 = new pumaKicks(6, 'Puma', 'Mayze OW(Women)',
+     'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Mayze_OW.png', 'hdjdbdjdh', 1,1125);
 
 // Addidas
 function addidasKicks(id, brand, name, image, description, quantity, price){
@@ -77,19 +79,24 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
   this.quantity = quantity;
   this.price = price;
 }
-const aMen1 = new addidasKicks(1,'Addidas','hjj',
-    'hokhh','uevfuiev',1,1300)
-const aMen2 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
-const aMen3 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
-const aWomen1 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
-const aWomen2 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
-const aWomen3 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
+const aMen1 = new addidasKicks(1,'Addidas','Yeezy Boost(Men)',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Yeezy_Boost.png','uevfuiev',1,1350)
+const aMen2 = new addidasKicks(2,'Addidas','Retrophy F2(Men)',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Retrophy_F2.png','uevfuiev',1,1490)
+const aMen3 = new addidasKicks(3,'Addidas','Ultraboost 1.0',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Ultraboost_1_0.png','uevfuiev',1,400)
+const aWomen1 = new addidasKicks(4,'Addidas','Alpha Boost V1',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/ALPHABOOST_V1.png','uevfuiev',1,1340)
+const aWomen2 = new addidasKicks(5,'Addidas','Yeezy Boost',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Yeezy_Boost.png','uevfuiev',1,1340)
+const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
+    'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Breaknet_2_0.png','uevfuiev',1,1520)
 
 
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
     let view = document.querySelector('#view');
     let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
-    // let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
+    let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
 
     let nProducts = document.querySelector('#nike');
     let pProducts = document.querySelector('#puma');
@@ -169,21 +176,22 @@ const aWomen3 = new addidasKicks(1,'Addidas','hjj','hokhh','uevfuiev',1,1300)
     aKicks.forEach(addidas => {
         aProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
-                                    <img src="${nike.image}" class="card-img-top">
+                                    <img src="${addidas.image}" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="card-title">${nike.name}</h5>
-                                        <p class="card-text">R${nike.price}</p>
-                                        <button id="view" type="button" value="${nike.id}" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View product</button>
-                                        <button value="${nike.id}" class="products">Add To Cart</button>
-                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <h5 class="card-title">${addidas.name}</h5>
+                                        <p class="card-text">R${addidas.price}</p>
+                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2${addidas.id}">View product</button>
+                                        <button value="${addidas.id}" class="products">Add To Cart</button>
+                                        <div class="modal fade" id="staticBackdrop2${addidas.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${nike.name}</h1>
+                                                    <h1 class="modal-title text-center fs-5" id="staticBackdropLabel">${addidas.name}</h1>
                                                 </div>
                                                 <div class="modal-body w-80 row">
-                                                    <div><img src="${nike.image}" style="width:10rem;">
-                                                    <p>${nike.description}</p></div>
+                                                    <div class="products-img">
+                                                    <img src="${addidas.image}" style="width:10rem;">
+                                                    <p>${addidas.description}</p></div>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
