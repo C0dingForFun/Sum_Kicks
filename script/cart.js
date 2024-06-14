@@ -1,12 +1,14 @@
-let purchasedNikes = localStorage.getItem('purchNike')
+let purchasedNikes = JSON.parse(localStorage.getItem('purchNike'))
 let tbody = document.querySelector('tbody');
 
 
-purchasedNikes.forEach(nike => {
+purchasedNikes.forEach(item => {
     tbody.innerHTML += `
                 <tr>
-                <td>${nike.image}</td>
-                <td>${nike.price}</td>
+                <td>${item.image}</td>
+                <td>${item.name}</td>
+                <td>${item.quantity}</td>
+                <td>${item.price}</td>
                 </tr>                 
                         `
 });

@@ -86,9 +86,8 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
     let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
     let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3,pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
+    
     localStorage.setItem('kicks', JSON.stringify('kicks'));
-    // localStorage.setItem('pKicks', JSON.stringify('pKicks'));
-    // localStorage.setItem('aKicks', JSON.stringify('aKicks'));
 
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
@@ -188,15 +187,15 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
         });
 
 
-let purcNike = []
+let purchNike = []
     
 let purcBtns = document.querySelectorAll('.purchNikes');
 
 function addTocart(id){
-    let [n] = kicks.filter(object => object.id === +id);
+    let [n] = kicks.filter(object => object.id == +id);
     console.log(n);
-        purcNike.push(n);
-        localStorage.setItem('nikeKicks',JSON.stringify(purcNike));
+        purchNike.push(n);
+        localStorage.setItem('nikeKicks',JSON.stringify(purchNike));
     }
             
     purcBtns.forEach(button =>{
