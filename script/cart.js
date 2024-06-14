@@ -1,9 +1,9 @@
-let purchasedNikes = JSON.parse(localStorage.getItem('nikeKicks'))
+let purchasedKicks = JSON.parse(localStorage.getItem('nikeKicks'))
 let tbody = document.querySelector('tbody');
-console.log(purchasedNikes);
-localStorage.setItem('cart', JSON.stringify(purchasedNikes))
+console.log(purchasedKicks);
+localStorage.setItem('cart', JSON.stringify(purchasedKicks))
 
-purchasedNikes.forEach(item => {
+purchasedKicks.forEach(item => {
     tbody.innerHTML += `
                 <tr ">
                     <td><img src="${item.image}" id="cart"</td>

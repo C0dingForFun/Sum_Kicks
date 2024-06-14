@@ -111,6 +111,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
     let nKicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3]
     let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
     let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
+    
     let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3,pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     
     localStorage.setItem('kicks', JSON.stringify('kicks'));
@@ -123,7 +124,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                         <h5 class="card-title">${nike.name}</h5>
                                         <p class="card-text">R${nike.price}</p>
                                         <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
-                                        <button value="${nike.id}" class="purchNikes">Add To Cart</button>
+                                        <button value="${nike.id}" class="purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop${nike.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -138,7 +139,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary purchN" value="${nike.id}">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchItems" value="${nike.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -156,7 +157,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                         <h5 class="card-title">${puma.name}</h5>
                                         <p class="card-text">R${puma.price}</p>
                                         <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1${puma.id}">View product</button>
-                                        <button value="${puma.id}" class="products purchN">Add To Cart</button>
+                                        <button value="${puma.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop1${puma.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -170,7 +171,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary purchN" value="${puma.id}">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchItems" value="${puma.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +189,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                         <h5 class="card-title">${addidas.name}</h5>
                                         <p class="card-text">R${addidas.price}</p>
                                         <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2${addidas.id}">View product</button>
-                                        <button value="${addidas.id}" class="products">Add To Cart</button>
+                                        <button value="${addidas.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop2${addidas.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -202,7 +203,7 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary purchN" value="${addidas.id}">Add To Cart</button>
+                                                    <button type="button" class="btn btn-primary purchItems" value="${addidas.id}">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,7 +217,7 @@ let cartItems = JSON.parse(localStorage.getItem('cart'))
 
 let purchKicks = cartItems || [];
 
-let purcBtns = document.querySelectorAll('.purchNikes');
+let purcBtns = document.querySelectorAll('.purchItems');
 
 function addTocart(id){
     let index = purchKicks.findIndex(item => item.id == id);
@@ -238,4 +239,14 @@ function addTocart(id){
     })
 })
     
-
+    let search = document.querySelector('#search');
+    search.addEventListener('mySearch', (event) => {
+        const searchItem = event.target.value.trim().toLowerCase();
+        if (searchItem.length < 1) {
+            addTocart(kicks);
+        }
+        let searchedProducts = allList.filter(myKicks =>
+            myKicks.name.toLowerCase().includes(searchItem));
+            console.log(searchedProducts);
+            addTocart(searchedProducts);
+    });
