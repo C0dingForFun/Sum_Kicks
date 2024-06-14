@@ -212,18 +212,21 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
                             `
         });
 
-let cartItems = JSON.parse(localStorage.getItem('purchasedNikes'))
-console.log(cartItems);
+let cartItems = JSON.parse(localStorage.getItem('cart'))
 
-let purchNike = cartItems || [];
-console.log(purchNike);
+let purchKicks = cartItems || [];
+
 let purcBtns = document.querySelectorAll('.purchNikes');
 
 function addTocart(id){
+    let q = 0;
+    if(purchKicks){
+        pumaKicks.reduced(q);
+    }
+    
     let [n] = kicks.filter(object => object.id == +id);
-    console.log(n);
-        purchNike.push(n);
-        localStorage.setItem('nikeKicks',JSON.stringify(purchNike));
+        purchKicks.push(n);
+        localStorage.setItem('nikeKicks',JSON.stringify(purchKicks));
     }
             
     purcBtns.forEach(button =>{
