@@ -10,5 +10,5 @@ purchasedNikes.forEach(item => {
                 <td>${item.quantity}</td>
                 <td>${item.price}</td>
                 </tr>                 
-                        `
+            `
 });
