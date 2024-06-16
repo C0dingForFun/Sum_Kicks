@@ -94,9 +94,9 @@ function addidasKicks(id, brand, name, image, description, quantity, price){
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/ALPHABOOST_V1.png',
         'Go for that walk around the neighbourhood or head to the gym in a pair of adidas Alphabounce V1 shoes. The mesh upper is soft and breathable to keep you comfortable as you go. A V1 midsole makes the ride soft and springy while Cloudfoam on the heel cushions every step, so you can cruise smoothly through the day.',
         1,1340)
-    const aWomen2 = new addidasKicks(5,'Addidas','Yeezy Boost',
-        'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Yeezy_Boost.png',
-        'The YEEZY BOOST features a full-length drop in boost midsole, an upper composed of suede overlays and premium leather with mesh underlays and heel details. The shoe has a black gum sole along with reflective heel and Three Stripes.', 
+    const aWomen2 = new addidasKicks(5,'Addidas','NMD_W1T',
+        'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/NMD_W1.png',
+        'The NMD W1 features a full-length drop in boost midsole, an upper composed of suede overlays and premium leather with mesh underlays and heel details.', 
         1,1340)
     const aWomen3 = new addidasKicks(6,'Addidas','Breaknet 2.0',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Breaknet_2_0.png',
@@ -221,16 +221,15 @@ let purchKicks = cartItems || [];
 let purcBtns = document.querySelectorAll('.purchItems');
 
 function addTocart(id){
-    let index = purchKicks.findIndex(item => item.id == id);
-    if(index == -1){
-        let [n] = kicks.filter(object => object.id == +id);
+        let index = purchKicks.findIndex(item => item.id == id);
+        if(index == -1){
+            let [n] = kicks.filter(object => object.id == +id);
             purchKicks.push(n);
-    }
-    else{
-        purchKicks[index].quantity++;
-    }
-    localStorage.setItem('nikeKicks',JSON.stringify(purchKicks));
-
+        }
+        else{
+            purchKicks[index].quantity++;
+        }
+        localStorage.setItem('nikeKicks',JSON.stringify(purchKicks));
     }
             
     purcBtns.forEach(button =>{
@@ -238,19 +237,31 @@ function addTocart(id){
         addTocart(event.target.value);
     })
 })
-    
-function display(){
-    let searchBtn = document.querySelector('#search');
-    let searchItem = document.querySelector('#mySearch')
-    searchBtn.addEventListener('click', (event) => {
-        const searchItem = event.target.value.trim().toLowerCase();
-        main.innerHTML = ``;
-        let search= kicks.filter(myKicks =>{
-            return myKicks.name.toLowerCase().includes(searchItem.value.toLowerCase())
-    })
-    
-})
-    }
-display(searchItem);
-    
 
+// // Function to search by name using filter()
+// function searchByName(arrayKicks, name) {
+//     return arrayKicks.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
+// }
+
+// // Example usage
+// const searchItem = `${kicks.name}`; // Example search term
+// const foundItems = searchByName(kicks, searchItem);
+
+// if (foundItems.length > 0) {
+//     console.log('Items found:');
+//     foundItems.forEach(item => {
+//         console.log(`${item.brand} - ${item.name}`);
+//     });
+// } else {
+//     console.log('No items found');
+// }
+
+// // Function to sort items by lowest price
+// function sortByLowPrice(items) {
+//     return items.slice().sort((a, b) => a.price - b.price);
+// }
+
+// // Function to sort items by highest price
+// function sortByHighPrice(items) {
+//     return items.slice().sort((a, b) => b.price - a.price);
+//  }
