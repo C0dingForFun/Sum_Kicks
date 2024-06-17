@@ -294,12 +294,12 @@ button:hover, button a:hover{
 
 
 /* Cart Page */
-    main table{
+    main #cart{
         display: flex;
         justify-content: center;
     }
 
-    td #cart{
+    #cart{
         object-fit: contain;
         width:200px;
         height:100px;
@@ -307,7 +307,7 @@ button:hover, button a:hover{
 
 /* Cart Page */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
 
     .nav-item a{
         font-size:20px;
