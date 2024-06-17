@@ -119,7 +119,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
-                                    <img src="${nike.image}" class="card-img-top">
+                                    <img src="${nike.image}" class="card-img-top" loading="lazy">
                                     <div class="card-body">
                                         <h5 class="card-title">${nike.name}</h5>
                                         <h5 class="card-title">${nike.gender}</h5>
@@ -134,7 +134,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-body w-80 row ">
                                                     <div class="products-img">
-                                                    <img src="${nike.image}" style="width:10rem;">
+                                                    <img src="${nike.image}" style="width:10rem;" loading="lazy">
                                                     <p>${nike.description}</p>
                                                     </div>
                                                 </div>
@@ -154,7 +154,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
     pKicks.forEach(puma => {
         pProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
-                                    <img src="${puma.image}" class="card-img-top">
+                                    <img src="${puma.image}" class="card-img-top" loading="lazy">
                                     <div class="card-body">
                                         <h5 class="card-title">${puma.name}</h5>
                                         <h5 class="card-title">${puma.gender}</h5>
@@ -169,7 +169,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-body w-80 row">
                                                     <div class="products-img">
-                                                    <img src="${puma.image}" style="width:10rem;">
+                                                    <img src="${puma.image}" style="width:10rem;" loading="lazy">
                                                     <p>${puma.description}</p></div>
                                                 </div>
                                                 <div class="modal-footer">
@@ -187,7 +187,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
     aKicks.forEach(addidas => {
         aProducts.innerHTML += `
                                 <div class="card" style="width: 18rem;">
-                                    <img src="${addidas.image}" class="card-img-top">
+                                    <img src="${addidas.image}" class="card-img-top" loading="lazy">
                                     <div class="card-body">
                                         <h5 class="card-title">${addidas.name}</h5>
                                         <h5 class="card-title">${addidas.gender}</h5>
@@ -202,7 +202,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-body w-80 row">
                                                     <div class="products-img">
-                                                    <img src="${addidas.image}" style="width:10rem;">
+                                                    <img src="${addidas.image}" style="width:10rem;" loading="lazy">
                                                     <p>${addidas.description}</p></div>
                                                 </div>
                                                 <div class="modal-footer">
@@ -238,26 +238,27 @@ function addTocart(id){
     purcBtns.forEach(button =>{
         button.addEventListener('click',(event)=>{
         addTocart(event.target.value);
+        alert('Your item has been added to cart');
     })
 })
 
-// // Function to search by name using filter()
-// function searchByName(arrayKicks, name) {
-//     return arrayKicks.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
-// }
+// Function to search by name using filter()
+function searchByName(arrayKicks, name) {
+    return arrayKicks.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
+}
 
-// // Example usage
-// const searchItem = `${kicks.name}`; // Example search term
-// const foundItems = searchByName(kicks, searchItem);
+// Example usage
+// const searchItem = `${}`; 
+const foundItems = searchByName(nikeKicks, searchItem);
 
-// if (foundItems.length > 0) {
-//     console.log('Items found:');
-//     foundItems.forEach(item => {
-//         console.log(`${item.brand} - ${item.name}`);
-//     });
-// } else {
-//     console.log('No items found');
-// }
+if (foundItems.length > 0) {
+    console.log('Items found:');
+    foundItems.forEach(item => {
+        console.log(`${item.brand} - ${item.name}`);
+    });
+} else {
+    console.log('No items found');
+}
 
 // // Function to sort items by lowest price
 // function sortByLowPrice(items) {
