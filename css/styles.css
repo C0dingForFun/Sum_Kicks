@@ -232,16 +232,16 @@ button:hover, button a:hover{
         
 /*  About Page*/
         
-    /* Contact page */
+/* Contact page */
         textarea{
             width: 12vw;
         }
             
-            .contact_btn{
-                width: 60px;
-                background-color: white;
-            }
-    /* Contact page *
+        .contact_btn{
+            width: 60px;
+            background-color: white;
+        }
+/* Contact page *
 
 /* Products page */
     .card-body button{
@@ -383,12 +383,10 @@ button:hover, button a:hover{
 
     #welcome-img{
         height:200px;
-        opacity: 0.8;
     }
 
     #lastImg{
         height:200px;
-        opacity: 0.8;
     }
 
     #products{

@@ -1,5 +1,4 @@
-
-let purchasedKicks = JSON.parse(localStorage.getItem('nikeKicks'))
+let purchasedKicks = JSON.parse(localStorage.getItem('nikeKicks'));
 let cart = document.querySelector('#cart');
 localStorage.setItem('cart', JSON.stringify(purchasedKicks))
 
