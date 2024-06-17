@@ -178,7 +178,7 @@ button:hover, button a:hover{
         font-size: 20px;
     }
     
-#welcome2{
+    #welcome2{
         height:400px;
         background-color: lightgreen;
         color:white;
@@ -281,6 +281,7 @@ button:hover, button a:hover{
 
     .dropdown-center button{
         background-color:rgba(3, 214, 45, 0.5) ;
+    }
 
     #products{
         display: grid;
@@ -307,7 +308,7 @@ button:hover, button a:hover{
 
 /* Cart Page */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
 
     .nav-item a{
         font-size:20px;
@@ -358,7 +359,7 @@ button:hover, button a:hover{
     #welcome{
         position: relative;
         top:90px;
-        height:220px;
+        height:230px;
         background-color: lightgreen;
         color:white;
         font-size: 20px;
@@ -391,17 +392,12 @@ button:hover, button a:hover{
     }
 
     #products{
-         display: grid;
+        display: grid;
         grid-template-columns: repeat( auto-fill, minmax(10px, 1fr) );
         gap:3em;
         place-items: center;  
-        margin-right:20px;
     } 
 
-    #products .card{
-        margin-right: 20px;
-    }
+}
 
-}
-}
 
