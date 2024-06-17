@@ -1,7 +1,7 @@
 //Nike
 function nikeKicks(id, gender, name, image, description, quantity, price){
   this.id = id;
-  this.gener = gender;
+  this.gender = gender;
   this.name = name;
   this.image = image;
   this.description = description;
@@ -34,9 +34,9 @@ function nikeKicks(id, gender, name, image, description, quantity, price){
          1,1100);
 
 // Puma
-function pumaKicks(id, brand, name, image, description, quantity, price){
+function pumaKicks(id, gender, name, image, description, quantity, price){
     this.id = id;
-    this.brand = brand;
+    this.gender = gender;
     this.name = name;
     this.image = image;
     this.description = description;
@@ -69,9 +69,9 @@ function pumaKicks(id, brand, name, image, description, quantity, price){
          1,1125);
     
 // Addidas
-function addidasKicks(id, brand, name, image, description, quantity, price){
+function addidasKicks(id, gender, name, image, description, quantity, price){
     this.id = id;
-    this.brand = brand;
+    this.gender = gender;
     this.name = name;
     this.image = image;
     this.description = description;
