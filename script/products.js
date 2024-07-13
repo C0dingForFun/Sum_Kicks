@@ -55,15 +55,15 @@ function pumaKicks(id, gender, name, image, description, quantity, price){
         'https://c0dingforfun.github.io/kicksPics/Images/Puma/Men/RBD_Game.png',
          'Taking inspiration from basketball, classics, and pop culture, these Rebound Game sneakers are here to change the game. The high-top cut is bang on trend and adds extra support around the ankles. The modern-meets-retro looks is so fresh – it’s what all the big kids on the block want to be wearing right now.',
          1,1290);
-    const pWomen1 = new pumaKicks(4, 'Women', 'Lajla_Leather(Women)',
+    const pWomen1 = new pumaKicks(4, 'Women', 'Lajla_Leather',
         'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Lajla_Leather.png',
          'Classic design, fresh new direction. These Lajla Leather Womens Sneakers exude style. With a streamlined all-over look, these sneakers are supremely comfortable and can be paired with anything. The subtle metallic PUMA No. 2 Logo speaks to this sneaker‘s quality.',
           1,1240);
-    const pWomen2 = new pumaKicks(5, 'Women', 'Carina Street Mid(Women)',
+    const pWomen2 = new pumaKicks(5, 'Women', 'Carina Street Mid',
         'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Carina_Street_Mid.png',
         'Carina is contemporary California cool meets 80s retro design. The laidback throwback is packed with details that turn an everyday sneaker into an essential piece of fashion-forward footwear – from the SoftFoam+ sockliner to the elevated platform sole.',
          1,1100);
-    const pWomen3 = new pumaKicks(6, 'Women', 'Mayze OW(Women)',
+    const pWomen3 = new pumaKicks(6, 'Women', 'Mayze OW',
         'https://c0dingforfun.github.io/kicksPics/Images/Puma/Women/Mayze_OW.png',
          'For the hype girls, the street enthusiasts, the rend setters ­the Mayze. This stand-out model has a stacked sole for a look that makes a statement, however you choose to style it.', 
          1,1125);
@@ -124,7 +124,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                         <h5 class="card-title">${nike.name}</h5>
                                         <h5 class="card-title">${nike.gender}</h5>
                                         <p class="card-text">R${nike.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
+                                        <button id="view" type="button" class="btn mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop${nike.id}">View product</button>
                                         <button value="${nike.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop${nike.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -140,8 +140,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                                                    <button type="button" class="btn btn-primary purchItems" value="${nike.id}">Add To Cart</button>
+                                                    <button value="${nike.id}" class="products purchItems">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,7 +158,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                         <h5 class="card-title">${puma.name}</h5>
                                         <h5 class="card-title">${puma.gender}</h5>
                                         <p class="card-text">R${puma.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1${puma.id}">View product</button>
+                                        <button id="view" type="button" class="btn mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1${puma.id}">View product</button>
                                         <button value="${puma.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop1${puma.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -174,7 +173,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary purchItems" value="${puma.id}">Add To Cart</button>
+                                                    <button value="${puma.id}" class="products purchItems">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -192,7 +191,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                         <h5 class="card-title">${addidas.name}</h5>
                                         <h5 class="card-title">${addidas.gender}</h5>
                                         <p class="card-text">R${addidas.price}</p>
-                                        <button id="view" type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2${addidas.id}">View product</button>
+                                        <button id="view" type="button" class="btn mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2${addidas.id}">View product</button>
                                         <button value="${addidas.id}" class="products purchItems">Add To Cart</button>
                                         <div class="modal fade" id="staticBackdrop2${addidas.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -207,7 +206,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary purchItems" value="${addidas.id}">Add To Cart</button>
+                                                    <button value="${addidas.id}" class="products purchItems">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
