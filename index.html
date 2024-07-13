@@ -14,54 +14,53 @@
 <body>
     <main>
         <div class="container-fluid overflow-x-hidden">
-            <div class="row">
+          <nav id="nav" class="navbar navbar-expand-sm" style="width:100vw">
+            <div class="container-fluid">
+                <img src="https://c0dingforfun.github.io/kicksPics/Images/Logo/myLogo.png" alt="My Logo" height="100px" width="100px" class="logo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="text-dark" style="font-size:30px;">&#9776<span>
+                </button>
+
+                <div class="offcanvas offcanvas-expand-sm offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:rgb(0, 0, 0, 0.8)">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                  </div>
+                
+                  <div class="offcanvas-body text-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3 f-3">                       
+                      <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                      </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./HTML/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./HTML/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./HTML/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./HTML/cart.html"><i class="las la-shopping-bag"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./HTML/login.html"><i class="las la-user-circle"></i></a>
+                    </li>
+                    </ul> 
+                  </div>                  
+                </div>
+            </div>
+        </nav>
+            <div class="row" style="width:100vw">
                 <div class="col-lg-6 col-sm-12">
-                    <nav id="nav" class="navbar navbar-expand-sm" style="width:100%">
-                        <div class="container-fluid">
-                            
-                            <img src="https://c0dingforfun.github.io/kicksPics/Images/Logo/myLogo.png" alt="My Logo" height="100px" width="100px" class="logo">
-
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                <span class="text-dark" style="font-size:30px;">&#9776<span>
-                            </button>
-
-                            <div class="offcanvas offcanvas-expand-sm offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:rgb(0, 0, 0, 0.8)">
-                              <div class="offcanvas-header">
-                                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
-                              </div>
-                            
-                              <div class="offcanvas-body text-center">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3 f-3">                       
-                                  <li class="nav-item active">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                  </li>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./HTML/about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./HTML/products.html">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./HTML/contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./HTML/cart.html"><i class="las la-shopping-bag"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="./HTML/login.html"><i class="las la-user-circle"></i></a>
-                                </li>
-                                </ul> 
-                              </div>                  
-                            </div>
-                        </div>
-                    </nav>
                     <div class="bannertxt mt-5">
                       <h1 data-aos="fade-up">Comfort & <br> Magic Awaits. <br> Everyday.</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="container-fluid">
+                    <div class="container-fluid mt-2">
                         <div class="d-flex justify-content-center align-items-center" id="banner">
 
                         </div>
@@ -69,7 +68,6 @@
                     </div>
                 </div>
             </div>
-
             <section class="trending">
               <h2 class="text-center text-decoration-underline mb-5">Trending This Week</h2>
               <div class="row d-flex justify-content-evenly" id="trending">
@@ -84,11 +82,11 @@
                 </div>
               </div> 
               <div class="d-flex justify-content-center mt-3">
-                <button>View More</button>
+                <button><a href="./HTML/products.html">View More</a></button>
               </div>
             </section>
 
-            <section>
+            <section class="sales">
               <h1 class="text-center text-decoration-underline mb-5">Sales</h1>
               <div class="row d-flex justify-content-evenly" id="sales">
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -102,7 +100,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3">
-                <button>View More</button>
+                <button><a href="./HTML/products.html">View More</a></button>
               </div>
             </section>
 
@@ -120,7 +118,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3">
-                <button>View More</button>
+                <button><a href="./HTML/products.html">View More</a></button>
               </div>
             </section>
 
