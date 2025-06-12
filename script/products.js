@@ -69,7 +69,7 @@ function pumaKicks(id, gender, name, image, description, quantity, price){
          1,1125);
     
 // Addidas
-function addidasKicks(id, gender, name, image, description, quantity, price){
+function adidasKicks(id, gender, name, image, description, quantity, price){
     this.id = id;
     this.gender = gender;
     this.name = name;
@@ -78,27 +78,27 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
     this.quantity = quantity;
     this.price = price;
 }
-    const aMen1 = new addidasKicks(1,'Men','Yeezy Boost',
+    const aMen1 = new adidasKicks(1,'Men','Yeezy Boost',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Yeezy_Boost.png',
         'The YEEZY BOOST features a full-length drop in boost midsole, an upper composed of suede overlays and premium leather with mesh underlays and heel details. The shoe has a black gum sole along with reflective heel and Three Stripes.',
         1,1350)
-    const aMen2 = new addidasKicks(2,'Men','Retrophy F2',
+    const aMen2 = new adidasKicks(2,'Men','Retrophy F2',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Retrophy_F2.png',
         'These adidas Retropy F2 shoes are nostalgic in inspiration but forward-thinking in style. Sleek proportions and a supportive EVA midsole add modern details to the 80s-inspired design. Suede overlays on the coated leather upper make this style perfect for whatever your day has in store.',
         1,1490)
-    const aMen3 = new addidasKicks(3,'Men','Ultraboost 1.0',
+    const aMen3 = new adidasKicks(3,'Men','Ultraboost 1.0',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Men/Ultraboost_1_0.png',
         'From a walk in the park to a weekend run with friends, these adidas Ultraboost 1.0 shoes are designed to keep you comfortable. An adidas PRIMEKNIT upper gently hugs your feet while BOOST on the midsole cushions from the first step to the last mile. The Stretchweb outsole flexes naturally for an energised ride, and Continental™ Rubber gives you the traction you need to keep that pep in your step.',
         1,1400)
-    const aWomen1 = new addidasKicks(4,'Women','Alpha Boost V1',
+    const aWomen1 = new adidasKicks(4,'Women','Alpha Boost V1',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/ALPHABOOST_V1.png',
         'Go for that walk around the neighbourhood or head to the gym in a pair of adidas Alphabounce V1 shoes. The mesh upper is soft and breathable to keep you comfortable as you go. A V1 midsole makes the ride soft and springy while Cloudfoam on the heel cushions every step, so you can cruise smoothly through the day.',
         1,1340)
-    const aWomen2 = new addidasKicks(5,'Women','NMD_W1T',
+    const aWomen2 = new adidasKicks(5,'Women','NMD_W1T',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/NMD_W1.png',
         'The NMD W1 features a full-length drop in boost midsole, an upper composed of suede overlays and premium leather with mesh underlays and heel details.', 
         1,1340)
-    const aWomen3 = new addidasKicks(6,'Women','Breaknet 2.0',
+    const aWomen3 = new adidasKicks(6,'Women','Breaknet 2.0',
         'https://c0dingforfun.github.io/kicksPics/Images/Addidas/Women/Breaknet_2_0.png',
         'Whether you are headed to a weekend hangout or running daily errands, do it in style with these adidas shoes. The clean silhouette gives you a classic look that works with any outfit. A comfortable synthetic upper and grippy rubber outsole make this the go-to pair for all your moves. Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste.',
         1,1520)
@@ -112,7 +112,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
     let pKicks = [pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3]
     let aKicks = [aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     
-    let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3,pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
+    let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3, pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     
     localStorage.setItem('kicks', JSON.stringify('myKicks'));
 
@@ -203,7 +203,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                     <p>${addidas.description}</p></div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <bon type="button" class="dark-btn" data-bs-dismiss="modal">Con>
+                                                    <button type="button" class="dark-btn" data-bs-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
