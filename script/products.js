@@ -140,7 +140,6 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="dark-btn" data-bs-dismiss="modal">Close</button>
-                                                    <button value="${nike.id}" class="products purchItems confirm-btn">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +172,6 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="dark-btn" data-bs-dismiss="modal">Close</button>
-                                                    <button value="${puma.id}" class="products purchItems confirm-btn">Add To Cart</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -205,8 +203,7 @@ function addidasKicks(id, gender, name, image, description, quantity, price){
                                                     <p>${addidas.description}</p></div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="dark-btn" data-bs-dismiss="modal">Close</button>
-                                                    <button value="${addidas.id}" class="products purchItems confirm-btn">Add To Cart</button>
+                                                    <bon type="button" class="dark-btn" data-bs-dismiss="modal">Con>
                                                 </div>
                                             </div>
                                         </div>
