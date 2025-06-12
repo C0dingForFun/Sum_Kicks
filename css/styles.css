@@ -7,13 +7,19 @@
 }
 
 body{
+    padding: 0;
     font-family: "Mukta", sans-serif;
     overflow-x: hidden;
+}
+
+.container-fluid{
+    padding-left: 0 !important;
 }
 
 /* Home page */
 
 nav{
+    width:100vw;
     background-color:rgba(3, 214, 45, 0.5) ;
 }
 
@@ -51,17 +57,34 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
+    width:50vw;
     height:500px;
+    border-radius:100%;
 }
 .card img{
     width:100%;
 }
-.btn{
-    background-color:rgba(3, 214, 45, 0.5);
-    transition:1s;
+.card{
+    background-color: rgba(3, 214, 45) !important;
+    color:whitesmoke;
 }
-.btn:hover{
+.dark-btn{
+    background-color:black;
+    color:whitesmoke;
+    padding:0.3em;
+    transition:1s;
+    border-radius: 10px;
+}
+.dark-btn:hover{
+    background-color:white;
+    color:black;
+}
+.confirm-btn{
+    padding:0.3em;
+    transition:1s;
+    border-radius: 10px;
+}
+.confirm-btn:hover{
     background-color:black;
     color:white;
 }
@@ -183,11 +206,18 @@ footer{
         background-position:center;
         background-size:cover;
         height:400px;
-        }
+    }
         
 /*  About Page*/
         
 /* Contact page */
+        #form{
+            border:solid 2px black;
+            width: 600px;
+            height:500px;
+            background-color: rgb(0,0,0,0.7);
+            padding:2em;
+        }
         textarea{
             width: 12vw;
         }
@@ -195,6 +225,7 @@ footer{
         .contact_btn{
             width: 60px;
             background-color: white;
+            padding: 0.3em;
         }
 /* Contact page *
 
@@ -226,7 +257,6 @@ footer{
     
     #filter input{
         width:25vw;
-        
     }
     
     .products-img{
@@ -245,6 +275,10 @@ footer{
         margin-left:50px;
         margin-top: 50px;
         
+    }
+    #products button{
+        --bs-btn-padding-x: 0.75rem !important;
+        --bs-btn-padding-y: 0.375rem !important;
     }
 /* Products page */
 /* Login */
@@ -292,12 +326,20 @@ footer{
     #cart{
         display:grid;
         place-items: center;
-    } 
+    }
+    .cart-container{
+        width:300px;
+        height:250px;
+    }
 
 /* Cart Page */
 
 @media only screen and (max-width: 600px){
-
+    
+    nav{
+        width:100vw;
+        margin-right: 20px;
+    }
     .nav-item a{
         font-size:20px;
         color:white;
@@ -311,6 +353,10 @@ footer{
         color:green;
         text-shadow:5px 5px grey;
         border-bottom: groove 2px green;
+    }
+    #banner{
+        width:90vw;
+        height:400px;
     }
     #about{
         height:100px;
@@ -359,5 +405,3 @@ footer{
     } 
 
 }
-
-
