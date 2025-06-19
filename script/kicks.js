@@ -28,7 +28,7 @@ function trendingKicks(id, gender, name, image, description, quantity, price){
   
       tKicks.forEach(trend => {
           tProducts.innerHTML += `
-                                  <div class="card" style="width: 18rem;">
+                                  <div class="card g-0" style="width: 18rem;">
                                     <div class="w-100">
                                       <img src="${trend.image}" class="card-img-top">
                                     </div>
@@ -71,7 +71,7 @@ function salesKicks(id, gender, name, image, description, quantity, price){
   
       sKicks.forEach(sales => {
           sProducts.innerHTML += `
-                                  <div class="card" style="width: 18rem;">
+                                  <div class="card g-0" style="width: 18rem;">
                                     <div class="w-100">
                                       <img src="${sales.image}" class="card-img-top">
                                     </div>
