@@ -114,7 +114,7 @@ function adidasKicks(id, gender, name, image, description, quantity, price){
     
     let kicks = [nMen1, nMen2, nMen3, nWomen1, nWomen2, nWomen3, pMen1, pMen2, pMen3, pWomen1, pWomen2, pWomen3,aMen1, aMen2, aMen3, aWomen1, aWomen2, aWomen3]
     
-    localStorage.setItem('kicks', JSON.stringify('myKicks'));
+    localStorage.setItem('kicks', JSON.stringify(kicks));
 
     nKicks.forEach(nike => {
         nProducts.innerHTML += `
@@ -213,11 +213,11 @@ function adidasKicks(id, gender, name, image, description, quantity, price){
                             `
         });
 
-let cartItems = JSON.parse(localStorage.getItem('cart'))
+let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
 let purchKicks = cartItems || [];
 
-let purcs = document.querySelectorAll('.purchItems confirm-btn');
+let purcs = document.querySelectorAll('.purchItems.confirm-btn');
 
 function addTocart(id){
         let index = purchKicks.findIndex(item => item.id == id);
@@ -245,16 +245,16 @@ function searchByName(arrayKicks, name) {
 
 // Example usage
 // const searchItem = `${}`; 
-const foundItems = searchByName(nikeKicks, searchItem);
+// const foundItems = searchByName(nikeKicks, searchItem);
 
-if (foundItems.length > 0) {
-    console.log('Items found:');
-    foundItems.forEach(item => {
-        console.log(`${item.brand} - ${item.name}`);
-    });
-} else {
-    console.log('No items found');
-}
+// if (foundItems.length > 0) {
+//     console.log('Items found:');
+//     foundItems.forEach(item => {
+//         console.log(`${item.brand} - ${item.name}`);
+//     });
+// } else {
+//     console.log('No items found');
+// }
 
 // // Function to sort items by lowest price
 // function sortByLowPrice(items) {
